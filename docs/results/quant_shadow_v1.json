@@ -1,0 +1,214 @@
+{
+  "study": "quant_shadow_v1",
+  "new_native_trials": 0,
+  "new_hardware_executions": 0,
+  "final_evidence_checks": 9,
+  "explicit_existing_native_histories": 4,
+  "quantized_profile_replays": 12,
+  "checkpoint_index_sha256": "6a4cc6ae9de93ae2a31f4248a36b5b6c07cfd285f72a5433c710d21d092852a3",
+  "scope": "Quantization-only passive observer replay on existing prepared20mm/2gnominal A/Bcoarse/fine histories;no calibrated sensing or feedback.",
+  "evaluation_complete": true,
+  "all_profiles_pass_original_numerical_limits": true,
+  "cases": [
+    {
+      "id": "a_center_0p25",
+      "ideal_every_state_exact": true,
+      "profiles": [
+        {
+          "profile": "ideal_reference",
+          "max_errors": {
+            "tilt_deg": 0.042341117504296095,
+            "relative_yaw_deg": 0.0005926581623451698,
+            "roll_deg": 0.0007122095522950622,
+            "pitch_deg": 0.04234111749576455,
+            "pitch_rate_rad_s": 1.760093246501732e-09
+          },
+          "original_error_gates_passed": true
+        },
+        {
+          "profile": "2g_125dps",
+          "max_errors": {
+            "tilt_deg": 0.04248738507181196,
+            "relative_yaw_deg": 0.020965134829500572,
+            "roll_deg": 1.5434909712993695e-06,
+            "pitch_deg": 0.042487385069113724,
+            "pitch_rate_rad_s": 3.3288908293182045e-05
+          },
+          "original_error_gates_passed": true
+        },
+        {
+          "profile": "4g_250dps",
+          "max_errors": {
+            "tilt_deg": 0.042071238884697326,
+            "relative_yaw_deg": 0.02940144830250018,
+            "roll_deg": 1.8620800684259013e-06,
+            "pitch_deg": 0.04207123888864772,
+            "pitch_rate_rad_s": 6.657752987373144e-05
+          },
+          "original_error_gates_passed": true
+        },
+        {
+          "profile": "16g_2000dps",
+          "max_errors": {
+            "tilt_deg": 0.0429882302818071,
+            "relative_yaw_deg": 0.3444613354719807,
+            "roll_deg": 8.04596479114825e-07,
+            "pitch_deg": 0.042988230295610746,
+            "pitch_rate_rad_s": 0.0005325614402330854
+          },
+          "original_error_gates_passed": true
+        }
+      ]
+    },
+    {
+      "id": "b_center_0p25",
+      "ideal_every_state_exact": true,
+      "profiles": [
+        {
+          "profile": "ideal_reference",
+          "max_errors": {
+            "tilt_deg": 0.03559215355974248,
+            "relative_yaw_deg": 0.0005926958228860419,
+            "roll_deg": 0.000712477526994422,
+            "pitch_deg": 0.035592153565423404,
+            "pitch_rate_rad_s": 1.7587409329501652e-09
+          },
+          "original_error_gates_passed": true
+        },
+        {
+          "profile": "2g_125dps",
+          "max_errors": {
+            "tilt_deg": 0.03574050004999191,
+            "relative_yaw_deg": 0.020965347557312775,
+            "roll_deg": 1.5402627470909529e-06,
+            "pitch_deg": 0.03574050006144647,
+            "pitch_rate_rad_s": 3.328706840903474e-05
+          },
+          "original_error_gates_passed": true
+        },
+        {
+          "profile": "4g_250dps",
+          "max_errors": {
+            "tilt_deg": 0.03544868568894828,
+            "relative_yaw_deg": 0.029401464338907772,
+            "roll_deg": 1.862079194069757e-06,
+            "pitch_deg": 0.03544868569887142,
+            "pitch_rate_rad_s": 6.65730148727974e-05
+          },
+          "original_error_gates_passed": true
+        },
+        {
+          "profile": "16g_2000dps",
+          "max_errors": {
+            "tilt_deg": 0.037980781705458086,
+            "relative_yaw_deg": 0.34446300484834236,
+            "roll_deg": 5.508395168241901e-07,
+            "pitch_deg": 0.03798078170546198,
+            "pitch_rate_rad_s": 0.0005318443333839818
+          },
+          "original_error_gates_passed": true
+        }
+      ]
+    },
+    {
+      "id": "a_center_0p125",
+      "ideal_every_state_exact": true,
+      "profiles": [
+        {
+          "profile": "ideal_reference",
+          "max_errors": {
+            "tilt_deg": 0.042053005744088455,
+            "relative_yaw_deg": 0.0003174741048356797,
+            "roll_deg": 0.00019560792832479113,
+            "pitch_deg": 0.042053005746919975,
+            "pitch_rate_rad_s": 1.7274377395615358e-09
+          },
+          "original_error_gates_passed": true
+        },
+        {
+          "profile": "2g_125dps",
+          "max_errors": {
+            "tilt_deg": 0.04227132347096204,
+            "relative_yaw_deg": 0.020984056979393203,
+            "roll_deg": 1.539473087195577e-06,
+            "pitch_deg": 0.04227132347730334,
+            "pitch_rate_rad_s": 3.3279400555224275e-05
+          },
+          "original_error_gates_passed": true
+        },
+        {
+          "profile": "4g_250dps",
+          "max_errors": {
+            "tilt_deg": 0.04177633292925248,
+            "relative_yaw_deg": 0.02928660653863565,
+            "roll_deg": 1.862106505653338e-06,
+            "pitch_deg": 0.041776332929993644,
+            "pitch_rate_rad_s": 6.657797857606523e-05
+          },
+          "original_error_gates_passed": true
+        },
+        {
+          "profile": "16g_2000dps",
+          "max_errors": {
+            "tilt_deg": 0.04318509749619258,
+            "relative_yaw_deg": 0.34415176887394944,
+            "roll_deg": 8.058835397328926e-07,
+            "pitch_deg": 0.04318509749573763,
+            "pitch_rate_rad_s": 0.0005324947404543231
+          },
+          "original_error_gates_passed": true
+        }
+      ]
+    },
+    {
+      "id": "b_center_0p125",
+      "ideal_every_state_exact": true,
+      "profiles": [
+        {
+          "profile": "ideal_reference",
+          "max_errors": {
+            "tilt_deg": 0.03558931892446319,
+            "relative_yaw_deg": 0.00031753760892272724,
+            "roll_deg": 0.00019567503411756833,
+            "pitch_deg": 0.03558931892547354,
+            "pitch_rate_rad_s": 1.7252745691168963e-09
+          },
+          "original_error_gates_passed": true
+        },
+        {
+          "profile": "2g_125dps",
+          "max_errors": {
+            "tilt_deg": 0.03576891041032722,
+            "relative_yaw_deg": 0.02102228831431299,
+            "roll_deg": 1.5394723947257027e-06,
+            "pitch_deg": 0.035768910407821555,
+            "pitch_rate_rad_s": 3.328629054434293e-05
+          },
+          "original_error_gates_passed": true
+        },
+        {
+          "profile": "4g_250dps",
+          "max_errors": {
+            "tilt_deg": 0.03537893535332198,
+            "relative_yaw_deg": 0.029324825466949513,
+            "roll_deg": 1.8621061962281697e-06,
+            "pitch_deg": 0.035378935361497894,
+            "pitch_rate_rad_s": 6.657562614701567e-05
+          },
+          "original_error_gates_passed": true
+        },
+        {
+          "profile": "16g_2000dps",
+          "max_errors": {
+            "tilt_deg": 0.03779392575028628,
+            "relative_yaw_deg": 0.3447633221528592,
+            "roll_deg": 5.508721819292206e-07,
+            "pitch_deg": 0.03779392574217161,
+            "pitch_rate_rad_s": 0.0005317705580416077
+          },
+          "original_error_gates_passed": true
+        }
+      ]
+    }
+  ]
+}

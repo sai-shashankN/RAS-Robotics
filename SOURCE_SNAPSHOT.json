@@ -1,6 +1,6 @@
 {
   "date": "2026-11-01",
-  "latest_sealed_checkpoint": 231,
+  "latest_sealed_checkpoint": 232,
   "scope": "Curated source,model assets and compact outcomes;no raw local archive or private conversation",
   "unchanged_source_files": [
     {
@@ -1758,6 +1758,66 @@
     {
       "path": "simulations/model-alpha/native-reference/alpha-b/collision-fixtures.json",
       "sha256": "ca00bffba49140287289b5160a12f4a32a2a1492e05e703da3dea5c608dae3cd"
+    },
+    {
+      "path": "simulations/model-alpha/quant_shadow/attitude_shadow.py",
+      "sha256": "53a3d726bcef4f0ce84aebe52199ede0aaa3fabe7e3f75701ca69381f87d64ed"
+    },
+    {
+      "path": "simulations/model-alpha/quant_shadow/consumer200.py",
+      "sha256": "0d5223feb96b6baaecb583e552fb7806cb01171a713e8929b0ff9fe0ef71ef3b"
+    },
+    {
+      "path": "simulations/model-alpha/quant_shadow/context.py",
+      "sha256": "d965b52accab53de3840737ebe72fdcb81757c36f87001e1aff0be88a4fb5d6b"
+    },
+    {
+      "path": "simulations/model-alpha/quant_shadow/history200.py",
+      "sha256": "e14eedfc2a9999c93d8cbd3ba8d216961b87fec387b23519a8ae849ddb740a99"
+    },
+    {
+      "path": "simulations/model-alpha/quant_shadow/measurement.py",
+      "sha256": "ca39c6ccd41844512150e6d6e315a063bdba168c10ea922c90519902c605767c"
+    },
+    {
+      "path": "simulations/model-alpha/quant_shadow/prepare.py",
+      "sha256": "3d0e7722995b5fa1303615d392de88850b3d54ee8e5eaae246ef1124f73d3cab"
+    },
+    {
+      "path": "simulations/model-alpha/quant_shadow/projection200.py",
+      "sha256": "d1bf10d4bfc37f7af81eb4bbaf9fb18ab4d6044a8ad0d0032c9d6f1bb00c6c60"
+    },
+    {
+      "path": "simulations/model-alpha/quant_shadow/replay.py",
+      "sha256": "fb5776ee55b071635f4749be286d56deae58424a9ff61717759d0fda6cdfdc31"
+    },
+    {
+      "path": "simulations/model-alpha/quant_shadow/run.py",
+      "sha256": "fcb6897d1a1238cd64b84492ac73211984324239e0cc6dc7476275deb2b13282"
+    },
+    {
+      "path": "simulations/model-alpha/quant_shadow/scale.py",
+      "sha256": "0529bd3ad534c7bb5855aeba5315c18f5cba39a9c0bf345c2e8f7ddd32fb66a7"
+    },
+    {
+      "path": "simulations/model-alpha/quant_shadow/seal.py",
+      "sha256": "40464e283d862b2286b6cd14f2daf18e6d61323e3873a01206b2735632d9f555"
+    },
+    {
+      "path": "simulations/model-alpha/quant_shadow/test_controls.py",
+      "sha256": "feb3d71e37137121eea65b9927f55833905c8310b2003021e15f9eb617c58270"
+    },
+    {
+      "path": "simulations/model-alpha/quant_shadow/test_evidence.py",
+      "sha256": "49b6c52de90b9692293f1d990552944c91ac90189b846b333b3ece9e7099a736"
+    },
+    {
+      "path": "simulations/model-alpha/quant_shadow/test_preflight.py",
+      "sha256": "e99af28fa096dcf4da1153c1177e8e2feedae3d64bb4bd431a69e4ca02fb1df7"
+    },
+    {
+      "path": "simulations/model-alpha/quant_shadow/timed_shadow.py",
+      "sha256": "863aa4c0ec12a3af0583934820de9c91d185726a3bf5bd132e22f66965683613"
     }
   ],
   "export_adaptations": [

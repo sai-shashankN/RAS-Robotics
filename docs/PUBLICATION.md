@@ -15,3 +15,5 @@ Before publication:
 - Git commits use a GitHub noreply author email. Authentication credentials remain in the local credential provider.
 
 Secret scanning reduces the risk of accidental disclosure; it is not a claim that any automated scanner can prove the absence of every possible secret.
+
+After the requested initial push,checkpoint232completed locally. Its source,compact outcome and summary chart were added. Four exported quantized-observer unit controls also passed;no additional native simulation or hardware trial was run. The new committed snapshot is secret-scanned again before push.
