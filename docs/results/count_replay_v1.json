@@ -1,0 +1,21 @@
+{
+  "study": "count_replay_v1",
+  "new_native_trials": 0,
+  "final_evidence_checks": 8,
+  "checkpoint_index_sha256": "2050de50b4a39794187941526efbacfe88b235ce3b23dfcb3936f6285c129296",
+  "scope": "Software-only source contract or explicit reuse of saved native histories;no new robot/hardware runs.",
+  "outcomes": {
+    "counts_quantization_replay_complete": true,
+    "explicit_existing_native_histories": 4,
+    "producer_rows": 271498,
+    "scalar_quantizations": 7330446,
+    "new_native_robot_trials": 0,
+    "new_hardware_driver_executions": 0,
+    "hardware_configuration_qualified": false,
+    "calibrated_SI_accuracy_qualified": false,
+    "conversion_freshness_admitted": false,
+    "acquisition_timestamp_mapping_admitted": false,
+    "raw_imu_feedback_admitted": false,
+    "full_m2_admitted": false
+  }
+}

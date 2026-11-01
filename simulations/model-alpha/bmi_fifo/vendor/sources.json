@@ -1,0 +1,43 @@
+{
+  "source": "Official Bosch Sensortec BSD-3-Clause SensorAPI;exact public Git blobs,downloaded29October2026",
+  "files": [
+    {
+      "name": "bmi2.c",
+      "git_blob_sha": "bbbf186e2d99aade20b3253711972bac14b1ecc4",
+      "sha256": "8d42ba3281b8448f674a4df616a7e176a259ad3c38c53b6d2c49bfdbdb0a82db",
+      "bytes": 374229,
+      "source_url": "https://raw.githubusercontent.com/boschsensortec/BMI270_SensorAPI/master/bmi2.c",
+      "git_blob_url": "https://api.github.com/repos/boschsensortec/BMI270_SensorAPI/git/blobs/bbbf186e2d99aade20b3253711972bac14b1ecc4",
+      "display_url": "https://github.com/boschsensortec/BMI270_SensorAPI/blob/master/bmi2.c"
+    },
+    {
+      "name": "bmi2.h",
+      "git_blob_sha": "c5c1fc1e54f32a3a9165241f1efef1748a298817",
+      "sha256": "a86c53c480974a0c56e24d9d4e736445c61ebc07addec6d3eaceddb8a2c97cd3",
+      "bytes": 68902,
+      "source_url": "https://raw.githubusercontent.com/boschsensortec/BMI270_SensorAPI/master/bmi2.h",
+      "git_blob_url": "https://api.github.com/repos/boschsensortec/BMI270_SensorAPI/git/blobs/c5c1fc1e54f32a3a9165241f1efef1748a298817",
+      "display_url": "https://github.com/boschsensortec/BMI270_SensorAPI/blob/master/bmi2.h"
+    },
+    {
+      "name": "bmi2_defs.h",
+      "git_blob_sha": "0bc3f913033bb65632a3de83b96c778c422a847e",
+      "sha256": "39c2cf19bfbf735cb0ed209efd975a731be50dff71b432b24a6a2625b2b14304",
+      "bytes": 130181,
+      "source_url": "https://raw.githubusercontent.com/boschsensortec/BMI270_SensorAPI/master/bmi2_defs.h",
+      "git_blob_url": "https://api.github.com/repos/boschsensortec/BMI270_SensorAPI/git/blobs/0bc3f913033bb65632a3de83b96c778c422a847e",
+      "display_url": "https://github.com/boschsensortec/BMI270_SensorAPI/blob/master/bmi2_defs.h"
+    },
+    {
+      "name": "LICENSE",
+      "git_blob_sha": "3fe3a6b8ca8d68fc96118c7ac702c780249eadf5",
+      "sha256": "56df116398e0b72a12ae353d93002d29175583590283ced2c2510e3d8075546f",
+      "bytes": 1524,
+      "source_url": "https://raw.githubusercontent.com/boschsensortec/BMI270_SensorAPI/master/LICENSE",
+      "git_blob_url": "https://api.github.com/repos/boschsensortec/BMI270_SensorAPI/git/blobs/3fe3a6b8ca8d68fc96118c7ac702c780249eadf5",
+      "display_url": "https://github.com/boschsensortec/BMI270_SensorAPI/blob/master/LICENSE"
+    }
+  ],
+  "archive_note": "GitHubconnector read primary sources/listing. Unauthenticated Git blob API archival request returned403before writing any vendor file;raw download fallback verified every exact Git blob SHA before saving.",
+  "hardware_executed": false
+}

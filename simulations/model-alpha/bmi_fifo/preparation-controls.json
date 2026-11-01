@@ -1,0 +1,9 @@
+{
+  "tests": 9,
+  "passed": true,
+  "vendor_memory_parser_calls": 268,
+  "forbidden_io_calls": 0,
+  "new_native_trials": 0,
+  "hardware_driver_executed": false,
+  "log": ".........\n----------------------------------------------------------------------\nRan 9 tests in 0.036s\n\nOK\n"
+}

@@ -1,0 +1,22 @@
+{
+  "study": "counter_phase_v1",
+  "new_native_trials": 0,
+  "final_evidence_checks": 15,
+  "checkpoint_index_sha256": "0f047b141449e129fcc7361d23233b62a79f5b212dd4cc34789847bc7611ed67",
+  "scope": "Software-only source contract or explicit reuse of saved native histories;no new robot/hardware runs.",
+  "outcomes": {
+    "counter_phase_source_contract_prepared": true,
+    "manufactured_schedule_traces": 6,
+    "independent_event_list_episodes": 100,
+    "independent_event_list_observations": 2500,
+    "manufactured_burst_compositions": 1,
+    "new_native_robot_trials": 0,
+    "new_hardware_driver_executions": 0,
+    "conversion_freshness_admitted": false,
+    "host_device_clock_mapping_qualified": false,
+    "acquisition_timestamp_mapping_admitted": false,
+    "output_event_phase_physically_qualified": false,
+    "raw_imu_feedback_admitted": false,
+    "full_m2_admitted": false
+  }
+}

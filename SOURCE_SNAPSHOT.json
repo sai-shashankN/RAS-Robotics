@@ -1,0 +1,1768 @@
+{
+  "date": "2026-11-01",
+  "latest_sealed_checkpoint": 231,
+  "scope": "Curated source,model assets and compact outcomes;no raw local archive or private conversation",
+  "unchanged_source_files": [
+    {
+      "path": "simulations/common/approach_planning.py",
+      "sha256": "4dd0d939ad7417a937083d68d95a0e246127df4a80b4213144eb88b057264c14"
+    },
+    {
+      "path": "simulations/common/capture_planning.py",
+      "sha256": "e593943c20fafe19faecdfeed1e98fd8dc1a0fe6cd8e9670defd689c0006eaac"
+    },
+    {
+      "path": "simulations/common/control_math.py",
+      "sha256": "2e6b6bda965523d57d5ea6d3db6579ab68351ab86091b778cdaedff48bd539d0"
+    },
+    {
+      "path": "simulations/common/generate_worlds.py",
+      "sha256": "c61dc7ad449d9b51c52da924f520041c7ee954188ac9373aeab04c12051bb044"
+    },
+    {
+      "path": "simulations/common/grasp_controller.py",
+      "sha256": "9dcd0c596ad1b85772d9887b79545660a356101f33c9c3373c817dfa22aed19f"
+    },
+    {
+      "path": "simulations/common/grasp_planning.py",
+      "sha256": "97de6bc54039bb18e2a6611bd428697462503374c704fe048111c57a4b4ea2fd"
+    },
+    {
+      "path": "simulations/common/mass_properties.py",
+      "sha256": "4cbcbc74d1022a9685f5b1e4c0a10b71b9dfab1280b48a8a95e268acb7e5c470"
+    },
+    {
+      "path": "simulations/common/return_planning.py",
+      "sha256": "c150a69a20819b53da3e926fb6063bf9f88d25a18a8b7985651c203a4b94f2da"
+    },
+    {
+      "path": "simulations/common/robot_controller.py",
+      "sha256": "f3949a4b33a1f5d5cb7b330426de23849f554ca645eaed5ccd4ed84c9a74f0d3"
+    },
+    {
+      "path": "simulations/model-alpha/launch.ps1",
+      "sha256": "206f0c0d6d38c059bdb8b4e6a75004d477ee0fbd6febcde7664bd7dddd728762"
+    },
+    {
+      "path": "simulations/model-alpha/parameters.json",
+      "sha256": "bc7ea487b60bff96eba3291eccead9ec3c9dbe3d609dd132074a225978582be3"
+    },
+    {
+      "path": "simulations/model-alpha/bmi_fifo/build.py",
+      "sha256": "ca3bf99076ead0e0128f7fbf96957ab02bdfe08be94fe2dadc0d99c8af314b99"
+    },
+    {
+      "path": "simulations/model-alpha/bmi_fifo/context.py",
+      "sha256": "83c391c35cbcf32e251389fdd54739ea1e23d7faffdde55adb59b4270b0f29ed"
+    },
+    {
+      "path": "simulations/model-alpha/bmi_fifo/decoder.py",
+      "sha256": "f0fad1494df6ef0f3dcd4dec3d5896be544a85c8e49d50ffa9f180b32cf7ef26"
+    },
+    {
+      "path": "simulations/model-alpha/bmi_fifo/harness.py",
+      "sha256": "d829e23b1893d7c552d958c3afd39cd85f74a2fda9ceaa2d9c01b56c0ff6abde"
+    },
+    {
+      "path": "simulations/model-alpha/bmi_fifo/preparation-controls-byte-only-original.json",
+      "sha256": "b66da89036f15b4e6a82e69cd81ba77f0cafdf94161417a0b07349d86e58527a"
+    },
+    {
+      "path": "simulations/model-alpha/bmi_fifo/preparation-controls.json",
+      "sha256": "9e91f19a048423bfa4e8ba9ca49d2a1f3b2f7173b53ba8007338969f55a4b358"
+    },
+    {
+      "path": "simulations/model-alpha/bmi_fifo/preparation_controls.py",
+      "sha256": "a8e713f94e56888be7a15cc0be1a1d967c3afb68e1180403811dc08f768d4f40"
+    },
+    {
+      "path": "simulations/model-alpha/bmi_fifo/prepare.py",
+      "sha256": "fb2a69211c16047a0d01c620738f5829fbaf55255113002f773d1c36a1892485"
+    },
+    {
+      "path": "simulations/model-alpha/bmi_fifo/run.py",
+      "sha256": "0b1d30b6db76b98d8117344a2db0a59340bae8ed2730597897e046464aa073ba"
+    },
+    {
+      "path": "simulations/model-alpha/bmi_fifo/seal.py",
+      "sha256": "81ccf43b549d9480b9d39ec7b93949ad210fcdb57f64a2dabd44c438a9a4e96a"
+    },
+    {
+      "path": "simulations/model-alpha/bmi_fifo/test_controls.py",
+      "sha256": "c36f65913bc32b860bf4b2a6dc30aff39b76bb12d00770efce3764c3cfe4d43b"
+    },
+    {
+      "path": "simulations/model-alpha/bmi_fifo/test_evidence.py",
+      "sha256": "36ba2913a7fee8e364cf4f413d3e966465a56c78e41b120a1fec984e24382d4c"
+    },
+    {
+      "path": "simulations/model-alpha/bmi_fifo/test_preflight.py",
+      "sha256": "7f8ae02b60abf7c60022f673f9711818c52aed126a54c3a3f66dbc854788aae9"
+    },
+    {
+      "path": "simulations/model-alpha/bmi_fifo/vendor_bridge.c",
+      "sha256": "d5c0ade91cbfa509afd1b66bac20264f390c6826b235a61979e7f50f4944ba06"
+    },
+    {
+      "path": "simulations/model-alpha/bmi_fifo/vendor/bmi2.c",
+      "sha256": "8d42ba3281b8448f674a4df616a7e176a259ad3c38c53b6d2c49bfdbdb0a82db"
+    },
+    {
+      "path": "simulations/model-alpha/bmi_fifo/vendor/bmi2.h",
+      "sha256": "a86c53c480974a0c56e24d9d4e736445c61ebc07addec6d3eaceddb8a2c97cd3"
+    },
+    {
+      "path": "simulations/model-alpha/bmi_fifo/vendor/bmi2_defs.h",
+      "sha256": "39c2cf19bfbf735cb0ed209efd975a731be50dff71b432b24a6a2625b2b14304"
+    },
+    {
+      "path": "simulations/model-alpha/bmi_fifo/vendor/LICENSE",
+      "sha256": "56df116398e0b72a12ae353d93002d29175583590283ced2c2510e3d8075546f"
+    },
+    {
+      "path": "simulations/model-alpha/bmi_fifo/vendor/sources.json",
+      "sha256": "1aea86a621be858a85e2e5bfedd9337f93bddb3578b1fee906ea685c8309ca63"
+    },
+    {
+      "path": "simulations/model-alpha/controllers/grasp_controller/approach_planning.py",
+      "sha256": "4dd0d939ad7417a937083d68d95a0e246127df4a80b4213144eb88b057264c14"
+    },
+    {
+      "path": "simulations/model-alpha/controllers/grasp_controller/capture_planning.py",
+      "sha256": "e593943c20fafe19faecdfeed1e98fd8dc1a0fe6cd8e9670defd689c0006eaac"
+    },
+    {
+      "path": "simulations/model-alpha/controllers/grasp_controller/control_math.py",
+      "sha256": "2e6b6bda965523d57d5ea6d3db6579ab68351ab86091b778cdaedff48bd539d0"
+    },
+    {
+      "path": "simulations/model-alpha/controllers/grasp_controller/grasp_controller.py",
+      "sha256": "9dcd0c596ad1b85772d9887b79545660a356101f33c9c3373c817dfa22aed19f"
+    },
+    {
+      "path": "simulations/model-alpha/controllers/grasp_controller/grasp_planning.py",
+      "sha256": "97de6bc54039bb18e2a6611bd428697462503374c704fe048111c57a4b4ea2fd"
+    },
+    {
+      "path": "simulations/model-alpha/controllers/grasp_controller/mass_properties.py",
+      "sha256": "4cbcbc74d1022a9685f5b1e4c0a10b71b9dfab1280b48a8a95e268acb7e5c470"
+    },
+    {
+      "path": "simulations/model-alpha/controllers/grasp_controller/return_planning.py",
+      "sha256": "c150a69a20819b53da3e926fb6063bf9f88d25a18a8b7985651c203a4b94f2da"
+    },
+    {
+      "path": "simulations/model-alpha/controllers/robot_controller/control_math.py",
+      "sha256": "2e6b6bda965523d57d5ea6d3db6579ab68351ab86091b778cdaedff48bd539d0"
+    },
+    {
+      "path": "simulations/model-alpha/controllers/robot_controller/mass_properties.py",
+      "sha256": "4cbcbc74d1022a9685f5b1e4c0a10b71b9dfab1280b48a8a95e268acb7e5c470"
+    },
+    {
+      "path": "simulations/model-alpha/controllers/robot_controller/robot_controller.py",
+      "sha256": "f3949a4b33a1f5d5cb7b330426de23849f554ca645eaed5ccd4ed84c9a74f0d3"
+    },
+    {
+      "path": "simulations/model-alpha/counter_phase/adapter.py",
+      "sha256": "3c0f09c6ff35be23bc2f6cda27d4e53a7a04d757439ddfcacafa17946ce346fa"
+    },
+    {
+      "path": "simulations/model-alpha/counter_phase/context.py",
+      "sha256": "0cfeacb45afb7b35574c24180b4c050cf61c4002f9e27fdca196a177e4868e98"
+    },
+    {
+      "path": "simulations/model-alpha/counter_phase/evaluate.py",
+      "sha256": "3d0f4c7bf3a043dec9eb6c5adeaadeb65b5d2fd8cd0516ac4006b78afa7b6782"
+    },
+    {
+      "path": "simulations/model-alpha/counter_phase/frames.py",
+      "sha256": "15b4c65eb948fe3d24ce87d618494d9ec93824b61f8aaffbb0d7eeb81f2b1e5b"
+    },
+    {
+      "path": "simulations/model-alpha/counter_phase/model.py",
+      "sha256": "b68594f22f8fdfa5f7f198f0352747a1ae07ed7bd3964bb7a103068a03b9610e"
+    },
+    {
+      "path": "simulations/model-alpha/counter_phase/owner.py",
+      "sha256": "cc6f13a5c475509ef2d9338eb3b53bcc50c88f3659c7279a17aaad9b243493cc"
+    },
+    {
+      "path": "simulations/model-alpha/counter_phase/phase.py",
+      "sha256": "991d44f909886f3d2869c11167d5ce8ad2cb067d0a2de5185fb162de60cc521c"
+    },
+    {
+      "path": "simulations/model-alpha/counter_phase/prepare.py",
+      "sha256": "4ec48cf9655891f7f92074def702cf89b4ff24eea800a5d147b40e14bf9b8306"
+    },
+    {
+      "path": "simulations/model-alpha/counter_phase/run.py",
+      "sha256": "65c12a9ae2e3cf314653c159019f276a04bdf2dc1f68b5176919c7fcf3e117cf"
+    },
+    {
+      "path": "simulations/model-alpha/counter_phase/seal.py",
+      "sha256": "3a2aad9acf7abc482ed248a8d69a622b5aead08637648a2af8f66004c290bfb3"
+    },
+    {
+      "path": "simulations/model-alpha/counter_phase/test_controls.py",
+      "sha256": "1946eb6d164964896df2fe853e3d19cde10ef8dc123b5870099ab60a8681bff8"
+    },
+    {
+      "path": "simulations/model-alpha/counter_phase/test_evidence.py",
+      "sha256": "49ed675668fb8fef590cff42a4308e2a919daa76823a95c007dd23fc5f45f13a"
+    },
+    {
+      "path": "simulations/model-alpha/counter_phase/test_preflight.py",
+      "sha256": "0f7df1d662fe1a15f8d5c7ea6c7a9aa5f3131ac748831f639bb2d30aa4d27a44"
+    },
+    {
+      "path": "simulations/model-alpha/count_replay/context.py",
+      "sha256": "6759d53cb686a742a1e049e296733192d79b0038fe92d0692ce0043977764fb9"
+    },
+    {
+      "path": "simulations/model-alpha/count_replay/prepare.py",
+      "sha256": "1ad643e01a103b397874446734caeaa507b644e1aab8215aaeaef84c9a574d36"
+    },
+    {
+      "path": "simulations/model-alpha/count_replay/replay.py",
+      "sha256": "fdf64e2159d4c88d498f20f92042a36f10d068261b0dc2f122ed6bd2d76a8559"
+    },
+    {
+      "path": "simulations/model-alpha/count_replay/run.py",
+      "sha256": "fcb6897d1a1238cd64b84492ac73211984324239e0cc6dc7476275deb2b13282"
+    },
+    {
+      "path": "simulations/model-alpha/count_replay/scale.py",
+      "sha256": "0529bd3ad534c7bb5855aeba5315c18f5cba39a9c0bf345c2e8f7ddd32fb66a7"
+    },
+    {
+      "path": "simulations/model-alpha/count_replay/seal.py",
+      "sha256": "9ca9d3eb040a915fb84f9bc08e6abeb726a886c9abdaf47ac4509c9e708de000"
+    },
+    {
+      "path": "simulations/model-alpha/count_replay/test_controls.py",
+      "sha256": "ba998f9faa542e77949915254e30878c0dcf54f0b84a38c0f6fee696b1da453b"
+    },
+    {
+      "path": "simulations/model-alpha/count_replay/test_evidence.py",
+      "sha256": "8e97dec27310be9bdb206402d24f1aeff0a52d97a4a2e42b2f518173ddb30310"
+    },
+    {
+      "path": "simulations/model-alpha/count_replay/test_preflight.py",
+      "sha256": "228054d39bd082f2dbbd1cf8246dcfcf9bbe15b83a6040f8e5c85a5b09d90eaa"
+    },
+    {
+      "path": "simulations/model-alpha/count_si/context.py",
+      "sha256": "705f22521d65ea1e9a45b4920e8fb3fcdabea00eb45e8caaf8cb4a369eb98092"
+    },
+    {
+      "path": "simulations/model-alpha/count_si/evaluate.py",
+      "sha256": "8b79e3a5f9cd2a7814286d6967b7c42ff84aaa53675d864b624942e58483c881"
+    },
+    {
+      "path": "simulations/model-alpha/count_si/prepare.py",
+      "sha256": "5316e2879c66e46ac068d809306dc6356ed2a0625f9c6a33fffc32a799e186dd"
+    },
+    {
+      "path": "simulations/model-alpha/count_si/run.py",
+      "sha256": "65c12a9ae2e3cf314653c159019f276a04bdf2dc1f68b5176919c7fcf3e117cf"
+    },
+    {
+      "path": "simulations/model-alpha/count_si/scale.py",
+      "sha256": "0529bd3ad534c7bb5855aeba5315c18f5cba39a9c0bf345c2e8f7ddd32fb66a7"
+    },
+    {
+      "path": "simulations/model-alpha/count_si/seal.py",
+      "sha256": "6b4d0197147f9ce8cf476b9712ce538416a6910bd3bd119fb2d824f5ae23cad0"
+    },
+    {
+      "path": "simulations/model-alpha/count_si/test_controls.py",
+      "sha256": "4bce62cd4ae961773fea8cc552b6f17d678671d74aac94799ea990063e0d1abc"
+    },
+    {
+      "path": "simulations/model-alpha/count_si/test_evidence.py",
+      "sha256": "aca568c0503447c0447f1f4a6ea00a711ec25efbc3690e02464611f1d9f8b40b"
+    },
+    {
+      "path": "simulations/model-alpha/count_si/test_preflight.py",
+      "sha256": "e6a86d857a9a169cee537fd14ad9399307e6f368909763d9bb57b65118803f4f"
+    },
+    {
+      "path": "simulations/model-alpha/count_si/vendor/accel_gyro_hw_int.c",
+      "sha256": "6f8dbd4d987db9de76f1b9091fea0930d38049dcb92e87d8ed5a6e7dc3a2a1e0"
+    },
+    {
+      "path": "simulations/model-alpha/count_si/vendor/bmi2_defs.h",
+      "sha256": "39c2cf19bfbf735cb0ed209efd975a731be50dff71b432b24a6a2625b2b14304"
+    },
+    {
+      "path": "simulations/model-alpha/count_si/vendor/LICENSE",
+      "sha256": "56df116398e0b72a12ae353d93002d29175583590283ced2c2510e3d8075546f"
+    },
+    {
+      "path": "simulations/model-alpha/count_si/vendor/sources.json",
+      "sha256": "c1de246d39b60b76681a45f1e8e1dd9144cac82f2609a92cf12bdba3632415e7"
+    },
+    {
+      "path": "simulations/model-alpha/fiducial_pose/context.py",
+      "sha256": "f093bc1a93e33e13159874ced8eeb4eddacc3be54c05803010d636aa364778b8"
+    },
+    {
+      "path": "simulations/model-alpha/fiducial_pose/core.py",
+      "sha256": "47e861b0f2c65369989c9135665e9533367db25c33f0d2802ed42087e0c202f6"
+    },
+    {
+      "path": "simulations/model-alpha/fiducial_pose/prepare.py",
+      "sha256": "7ef5148750baea14578ed2c264e68c0a83e87995aaee12ac7b89f473c873687d"
+    },
+    {
+      "path": "simulations/model-alpha/fiducial_pose/seal.py",
+      "sha256": "25ba8ea58cb9bfebb7f27c7a0b818e4df501d7c69c4472871491fed814558474"
+    },
+    {
+      "path": "simulations/model-alpha/fiducial_pose/test_evidence.py",
+      "sha256": "73df7ad8e7288051b690f372b76f5ea9d22d98445a2fda15d79822655bcb86ed"
+    },
+    {
+      "path": "simulations/model-alpha/fifo_burst_epoch/context.py",
+      "sha256": "916e6e9e08671f151a5cb56fb7b2903ae02c90b710834df0df125280ded49092"
+    },
+    {
+      "path": "simulations/model-alpha/fifo_burst_epoch/evaluate.py",
+      "sha256": "ffdb1a79e6838ed8498fe64dafea70d3cf8c3def67bade8d422c2c1d978911f7"
+    },
+    {
+      "path": "simulations/model-alpha/fifo_burst_epoch/frames.py",
+      "sha256": "15b4c65eb948fe3d24ce87d618494d9ec93824b61f8aaffbb0d7eeb81f2b1e5b"
+    },
+    {
+      "path": "simulations/model-alpha/fifo_burst_epoch/model.py",
+      "sha256": "b68594f22f8fdfa5f7f198f0352747a1ae07ed7bd3964bb7a103068a03b9610e"
+    },
+    {
+      "path": "simulations/model-alpha/fifo_burst_epoch/owner.py",
+      "sha256": "cc6f13a5c475509ef2d9338eb3b53bcc50c88f3659c7279a17aaad9b243493cc"
+    },
+    {
+      "path": "simulations/model-alpha/fifo_burst_epoch/prepare.py",
+      "sha256": "e020e3c0b790e8f5bdd50ff9c4ceee0aec35090464c90e1d416217cbf1598703"
+    },
+    {
+      "path": "simulations/model-alpha/fifo_burst_epoch/run.py",
+      "sha256": "65c12a9ae2e3cf314653c159019f276a04bdf2dc1f68b5176919c7fcf3e117cf"
+    },
+    {
+      "path": "simulations/model-alpha/fifo_burst_epoch/seal.py",
+      "sha256": "44140c19ff20362defdce25a248fc9c13a53c1ec91c75c2ece918180693829ab"
+    },
+    {
+      "path": "simulations/model-alpha/fifo_burst_epoch/test_controls.py",
+      "sha256": "e007cc5d7c4612e5c9fc371fa254af711b147cbe06c4b3f4537032c98df4d3bb"
+    },
+    {
+      "path": "simulations/model-alpha/fifo_burst_epoch/test_evidence.py",
+      "sha256": "4a432fa5bcdc287a7ff1b2556b89e9a2b1169dcc0dcdf98d54fb2bbd6f0a5328"
+    },
+    {
+      "path": "simulations/model-alpha/fifo_burst_epoch/test_preflight.py",
+      "sha256": "5b44671a9f440dc57ac163fbcef28ed9c3b15c7ecf4556aeb0e5b67ea5f52276"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/attitude_shadow.py",
+      "sha256": "53a3d726bcef4f0ce84aebe52199ede0aaa3fabe7e3f75701ca69381f87d64ed"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/audit_reference.py",
+      "sha256": "6d89f5c15024eb9b8d825df5299855f94333ee2cdd0e19e7cb09243df785eb0d"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/buffer.py",
+      "sha256": "389efce3d5253173f0ac95cce9ad2fb5f38a3c90b293f97bac570df1b833b4ba"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/cadence.py",
+      "sha256": "c986cb3ad3a966336be708da5b4a48b461995cecb3e72dcff260afa407a50e6b"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/consumer.py",
+      "sha256": "37b386c137665194e44779efa265a2e807be8e03a3e19ad5bd4efc46f3b83d62"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/consumer200.py",
+      "sha256": "0d5223feb96b6baaecb583e552fb7806cb01171a713e8929b0ff9fe0ef71ef3b"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/context.py",
+      "sha256": "4b3f773d6b5ba720b90a00968f6fb3ecfb5024d511c262e1eca16da1059be937"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/cube_geometry.py",
+      "sha256": "2cf3b0a6ac005c5497e94f3195bae1b96542960b2bf06570d13e20b51754e133"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/deferred_wrench.py",
+      "sha256": "77a36e23ecf11c797f7a389a07fbf81e22e2097635ad7ebdc1b1db3b8896b6e5"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/derivation.py",
+      "sha256": "d4e456539cde04e2c3dc0d4726b327ffd669f07128ecaac9f44912604b272d9e"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/drive_audit.py",
+      "sha256": "7fba63f2d5c2b3c0b6e591126e51d243d259aaea6e5b6a40c15686bcf09fc9f1"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/dynamics_core.py",
+      "sha256": "32b9e2ed7785f82096d940c9ae75cd03135052b90cb050a141b3147a0c5cba8c"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/evaluate.py",
+      "sha256": "7c591750b58b197b97bf8d8d651ebb5f0cf2e8959fbfa7c7105f24c27241fb00"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/fixture_sensor.py",
+      "sha256": "499d0a58bce8db9771fc2d04b1051afbefbd87798b895ee6e8844c5f9af4f030"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/fixture_world.py",
+      "sha256": "c1b44c10bf06f631409eed96336e277df7196ecf1cbef3edc84b8a984e7b4a93"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/full200.py",
+      "sha256": "4aac0b81a9ed6a0023f94c249b5204ef0397861728f9c2974258d4a96a7276dc"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/full_reference.py",
+      "sha256": "39fff23faf90fe3642a81debffbda8b9490bcd5a919010c9840415c2bf685beb"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/full_wrench.py",
+      "sha256": "ed5f35aa2443954eb130a6065ce51097fb2eded83e8b96cc856bc803dfe78630"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/history.py",
+      "sha256": "7dfb6f935f4ffcaa825bf4785b67e450f6b4f688ec73ef9f619ad4fe3abdcd62"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/history200.py",
+      "sha256": "e14eedfc2a9999c93d8cbd3ba8d216961b87fec387b23519a8ae849ddb740a99"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/host_consumer.py",
+      "sha256": "e7d255cb48131ec8bd23aa5a264b3a415a9ad7c0e0fe83b3ad0728c75554e141"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/launcher.py",
+      "sha256": "09b1c4e7aa309ba3e0471e741ddacfb60484df6f452b9da30ff04522df545b34"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/legacy_full_reference.py",
+      "sha256": "8c084b0b3e94f07bdcde4dd1ad2f441da84fa3543a788b076a9d3c3ac34adea2"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/m1_audit.py",
+      "sha256": "e67148ae57b66933722885e1fdf81f14e5da893c25c2c4c365ea027f0c1bd506"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/measurement.py",
+      "sha256": "ca39c6ccd41844512150e6d6e315a063bdba168c10ea922c90519902c605767c"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/metrics200.py",
+      "sha256": "1b4e4ece384c99690e32884a8a02260062ee28c264fd4bad646f6fa2fd6a5f87"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/mission_audit.py",
+      "sha256": "616fe6f98f117b56f74df5982708ac67b4f9b06cc66f2552aee9e531906e8979"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/mission_reference.py",
+      "sha256": "e7108551a690bd029693003373839ca0dc53fdbdfa8c344ad3f06e34c3352d58"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/observed200.py",
+      "sha256": "e3ff29c9130901dbcc1d9f1c4142f961cea897fb039be810682e3e9c8776c26e"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/observer_audit.py",
+      "sha256": "7b5cac21a3f02420bcaeb876ebf89a27a6d58b679524917830e637391a460740"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/original_compare.py",
+      "sha256": "740ba32ab33056ca95e8e3d82acfb5de6df1caf28d2b9c75c76df9aae89f2b6c"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/owner.py",
+      "sha256": "97e42cfcbd90d5ddc7d6b9d91fce7590ef8b2ad529ad5163a9b3f42c073c9d08"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/owner_derivation.py",
+      "sha256": "f7f3c1570356f6b0186213be43cb87bd62ffeb056d6be03584bdbfb1752fe233"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/packet_audit.py",
+      "sha256": "721780fa62369671ac4fbca969f3edab74cdb72b5a28e65f41b33a6a7f0a3866"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/prefix200_derivation.py",
+      "sha256": "89cbd3cfaeeb538d0f8fa02b3130058f276df3414a73f1f6682a8858517b57bc"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/prefix_derivation.py",
+      "sha256": "d1cf4f4c4f779f772d6337d9fe6358c3af10e8320713e5f1418cbd8b1a6edc28"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/prepare.py",
+      "sha256": "076a6b848ed73f9940e7b8867b1d683bdca9878c79fec7d2ccab2095f62e8cd2"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/projection.py",
+      "sha256": "e6dab5b5c826d29811278965eca226ab0c2d89aef8da2cb70762fd125d5e4e14"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/projection200.py",
+      "sha256": "d1bf10d4bfc37f7af81eb4bbaf9fb18ab4d6044a8ad0d0032c9d6f1bb00c6c60"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/raw_metrics.py",
+      "sha256": "e4d1b3f9628f130042bf02ba52f81d563bf0bc9b056a92100a36219989b53c9a"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/robot_native_audit.py",
+      "sha256": "3d5323fae4d1f704c317ad8a9ef15923dba16fb0e7a1d61930059c03d0dfc9ba"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/run.py",
+      "sha256": "5f124dbebc0e0c33bd511108100d5ffedaa5a767ba01acd3700dc75339d837ed"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/seal.py",
+      "sha256": "359ab028e84143d7047ed707084b1ace9c2883c03ed972c411592ee87419ea28"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/sidecar200.py",
+      "sha256": "8b9ba42e5bdad36cf50ebf889ef1c9d09a110e3bda1210aa53bb31f24373b9d6"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/solid_math.py",
+      "sha256": "0666625dc3733d0e1dc02d1cee1cd94aaa642452d95d0c452984797b7def4b8c"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/spatial_audit.py",
+      "sha256": "25d11f73f70fd25bf0820348c911b4b1dd470abd297d0a9ed117f5877111e72c"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/support_audit.py",
+      "sha256": "4e7dc8c4b28cd6afb6a51e4786e94c140b0800fdf1ec721c889c17acfbdfb73d"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/test_audit.py",
+      "sha256": "00d46491bcd7d9fa0f7d7656804ca5ee6c9ef4dee1f4ffa812906a7075f57662"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/test_clock_controls.py",
+      "sha256": "6a5b88f5f15bca2b56f0bf2772f4a2c95e68386cf124416d81bdda577f4c79ca"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/test_evidence.py",
+      "sha256": "9a515c409c3c574220b6a3e4539770fa1e14e07c2b1ee5722f152ee5af11c4dc"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/test_preflight.py",
+      "sha256": "212c821fec7f74cc1abb2f6444eb239ae0364214e1ef10d65c579dea41cc9841"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/test_projection.py",
+      "sha256": "b265829f33ce2be1a070fe7e02637abd057255541e7eed014b548df491cd9728"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/timed_shadow.py",
+      "sha256": "863aa4c0ec12a3af0583934820de9c91d185726a3bf5bd132e22f66965683613"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/wheel_drive_audit.py",
+      "sha256": "e98fe17d0d0fead31c1ddcb45d24fcfd50b04ff736314034596a1224bb4c9e74"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/window.py",
+      "sha256": "14dde1a0d465af39372456210a96107f2c1a30c8333bdd0fa585f9e142ffe49f"
+    },
+    {
+      "path": "simulations/model-alpha/full_200hz/wrench_wire.py",
+      "sha256": "04269bc7270f1c88bcdd15df679a0e6c23a215f175e729872e83756a4028d9a0"
+    },
+    {
+      "path": "simulations/model-alpha/impact_probe/analyze.py",
+      "sha256": "ca50f833830b5e03889071ec86de5cfae6d19247c0e26eef0564befb036bb1b2"
+    },
+    {
+      "path": "simulations/model-alpha/impact_probe/build.py",
+      "sha256": "6caf7caf113369380468414f2b4fa419fd81d6e4a2e1e6a89a5ff13634edc3b2"
+    },
+    {
+      "path": "simulations/model-alpha/impact_probe/context.py",
+      "sha256": "2b893e2f028415b5094859b3229957691570c5d836b1cb54b10ca596fc50a1bb"
+    },
+    {
+      "path": "simulations/model-alpha/impact_probe/impact_probe.c",
+      "sha256": "b83dbbd8e94e046b8b6fde0456bd7c5879b1b1cec33c891af522b23b0c651314"
+    },
+    {
+      "path": "simulations/model-alpha/impact_probe/observe_controller.py",
+      "sha256": "6fac82edb834dd34184ad2e11d3fa87203e4c67369db073d3b7b9ea2a46f9379"
+    },
+    {
+      "path": "simulations/model-alpha/impact_probe/prepare.py",
+      "sha256": "afef41e54da732da14372e790d891910e7e9b663324ef9a5b812cae69fd9b64e"
+    },
+    {
+      "path": "simulations/model-alpha/impact_probe/run.py",
+      "sha256": "03b5eefbd21b3d1d14c7a0a4350dcc299e11ed0c269f46cd2a848a0f565a741d"
+    },
+    {
+      "path": "simulations/model-alpha/impact_probe/seal.py",
+      "sha256": "1f27ee89938e06b9284369a3cf35c5c744552322bab7389256f82d6581ee23ed"
+    },
+    {
+      "path": "simulations/model-alpha/impact_probe/test_evidence.py",
+      "sha256": "49333f5f1127eff51fab8a85e382accb1cb8e74ed5148bfe122bfda385ec2104"
+    },
+    {
+      "path": "simulations/model-alpha/impact_probe/unlaunched-compile1/build.json",
+      "sha256": "d1862cf4c93f56537265dd94d5b4ed9b2ad9b6674013c72d4d1f216ab6b4bff0"
+    },
+    {
+      "path": "simulations/model-alpha/impact_probe/unlaunched-compile1/impact_probe.c",
+      "sha256": "1f8cbd90c5d71c440fb1c52f66ab248e6786dfda65f3386f3c0f892c75982a85"
+    },
+    {
+      "path": "simulations/model-alpha/impact_refinement/analyze.py",
+      "sha256": "ca50f833830b5e03889071ec86de5cfae6d19247c0e26eef0564befb036bb1b2"
+    },
+    {
+      "path": "simulations/model-alpha/impact_refinement/compare_refinement.py",
+      "sha256": "05c5976d6790b3de8f7e94d1cd6a9c1e89ddd1d7bebe0c380925da506ce0a871"
+    },
+    {
+      "path": "simulations/model-alpha/impact_refinement/context.py",
+      "sha256": "b3feee7c5bca230c6baef8c37bccf8b885c5a21a38a661a9bd2fe5fbf06b9189"
+    },
+    {
+      "path": "simulations/model-alpha/impact_refinement/impact_probe.c",
+      "sha256": "b83dbbd8e94e046b8b6fde0456bd7c5879b1b1cec33c891af522b23b0c651314"
+    },
+    {
+      "path": "simulations/model-alpha/impact_refinement/observe_controller.py",
+      "sha256": "6fac82edb834dd34184ad2e11d3fa87203e4c67369db073d3b7b9ea2a46f9379"
+    },
+    {
+      "path": "simulations/model-alpha/impact_refinement/prepare.py",
+      "sha256": "2c2d0b44a8f64cafb8d7a0b2c137d7e9130ca5c152dbf1017f999e06afbbc81d"
+    },
+    {
+      "path": "simulations/model-alpha/impact_refinement/run.py",
+      "sha256": "115544e125a6c51b65ef67cc567c1bcc20772facf1c58f2a3ea1537e0e1a9f8a"
+    },
+    {
+      "path": "simulations/model-alpha/impact_refinement/seal.py",
+      "sha256": "4ff578732209e52ada315a960b238973934923b89a83116dc6413f0e88655630"
+    },
+    {
+      "path": "simulations/model-alpha/impact_refinement/test_evidence.py",
+      "sha256": "60781244abac0835eb94ff258e9d46ef2a23443cce6b1880bdf0daf39ceee3db"
+    },
+    {
+      "path": "simulations/model-alpha/m2_fault_coverage/context.py",
+      "sha256": "2593c83248106e7eb8c847407d772eb29268c20518be20b13766a3e4a99ca921"
+    },
+    {
+      "path": "simulations/model-alpha/m2_fault_coverage/review.py",
+      "sha256": "95a93c4aa184f0cf567111226538fab22e19c5066e4472642dfe7e9b2c102cde"
+    },
+    {
+      "path": "simulations/model-alpha/m2_fault_coverage/seal.py",
+      "sha256": "56b316b7997d7dd0cf4556b784d181666f08190bf5d51ba4c5c993996b3284ba"
+    },
+    {
+      "path": "simulations/model-alpha/m2_fault_coverage/test_evidence.py",
+      "sha256": "278bf6d37858989067176b24ebccadd1e5b7867d983b40c7edf250075807b1c7"
+    },
+    {
+      "path": "simulations/model-alpha/prefilter_holdout/build_scenes.py",
+      "sha256": "3301b0abe4ce403757411d6dc034de62d8f20d78e36e1096ef48062060ff8f1f"
+    },
+    {
+      "path": "simulations/model-alpha/prefilter_holdout/capture_controller.py",
+      "sha256": "76066bb975072554b7be15e98b1cc98abcfb4bde1106fa4de2f9434fa6e75143"
+    },
+    {
+      "path": "simulations/model-alpha/prefilter_holdout/context.py",
+      "sha256": "1a58ce74a479318f769cf5d60518566d2c2485192334ba7427fc54ad0b1e9ec8"
+    },
+    {
+      "path": "simulations/model-alpha/prefilter_holdout/envelope_math.py",
+      "sha256": "8ef8b6c06a957a33325b0004c40763205f4ae334453e01e366f4f6cb32848890"
+    },
+    {
+      "path": "simulations/model-alpha/prefilter_holdout/native_base.py",
+      "sha256": "9a51df89854cd3f2782b71a1ddf949659b6f29fea9ae96b85bda503b45d5cf5a"
+    },
+    {
+      "path": "simulations/model-alpha/prefilter_holdout/pinhole.py",
+      "sha256": "465bce8cb2cbd4a44a5f763980e017605cc207dbf2a759ca85a9f0a8e7854f2e"
+    },
+    {
+      "path": "simulations/model-alpha/prefilter_holdout/pose_core.py",
+      "sha256": "47e861b0f2c65369989c9135665e9533367db25c33f0d2802ed42087e0c202f6"
+    },
+    {
+      "path": "simulations/model-alpha/prefilter_holdout/pose_estimator.py",
+      "sha256": "ee4aa81b9e3e25ae2dbdcefe8afe06babdd83e3af3448c1fe5872b6457940e25"
+    },
+    {
+      "path": "simulations/model-alpha/prefilter_holdout/prepare.py",
+      "sha256": "8e170ebeda29d3726df2fab72d8ce527ee8d8a1851bb51a2c1ed2fbcfcb0cd93"
+    },
+    {
+      "path": "simulations/model-alpha/prefilter_holdout/profile.py",
+      "sha256": "c55b43abe798ded57424f81007a0acf9fbb443724e2507229a1adb68db397376"
+    },
+    {
+      "path": "simulations/model-alpha/prefilter_holdout/run.py",
+      "sha256": "1141e1f03ee0fc0d7089e4d65169234ec4f2b2d69f8434e64ca8e89a030d8402"
+    },
+    {
+      "path": "simulations/model-alpha/prefilter_holdout/scene_builder.py",
+      "sha256": "135736f8d88d344c3baa03215d7f5a2ff31654188cf5cd5a1e1aa2739d5fb9b8"
+    },
+    {
+      "path": "simulations/model-alpha/prefilter_holdout/seal.py",
+      "sha256": "18eabf8598f7ddbca64cdd50e614bf5dd324c25367bf837e5a05ffde97e04ab7"
+    },
+    {
+      "path": "simulations/model-alpha/prefilter_holdout/tag_library.py",
+      "sha256": "0e2bdc48776355fd7d0fea4bc62c3a930e0b1891514b449d608a45acab0ffa65"
+    },
+    {
+      "path": "simulations/model-alpha/prefilter_holdout/test_evidence.py",
+      "sha256": "dd51d543bbafa63a23d199c34c1e039ac4aaa53d289ebf28ac87836439fcb32d"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/archive_three_finger.py",
+      "sha256": "8c13af40e6755e2fe18c8fe71ab1dcfae25827fe6a326b7d81b411484b2fc40b"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/audit_axis_variant.py",
+      "sha256": "2b5b2b90aef9b67dcb7262fe1af58f3a42fce1f509b59a43a5793cfccf8ba51a"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/audit_clearance.py",
+      "sha256": "9f1397908627a86267d798febbabc69a17464721d53c886415b23b1c2d9f3614"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/audit_folded_approach.py",
+      "sha256": "8f3809a6b5449f471d9694c4cc7da5d1e70fdffdc629fd34d8224770e234e8ea"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/audit_grasp_clearance.py",
+      "sha256": "001ac9f3e13686c69901f99118384782ccf688979c608d0b398e80f90beed057"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/audit_return_cycle.py",
+      "sha256": "3b84ce4fa2e3a686eaadbb5ac53e880c2505e11e443ced2e4568d6887eeeb395"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/cartesian_pick_place.py",
+      "sha256": "303890c026b5ef515550e3ecc0266c1258b065ed6c2bcc1097ac99f5b5b24f6b"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/coordinated_pick_place.py",
+      "sha256": "c1e64bc14e3abb8d5e1d056b29a1d2212dd36e028b91a469c28e118932d249b6"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/cube_geometry.py",
+      "sha256": "1033e9b0fffb9bc7ae29050db6d24d59ab90f8c86c1b09f99949ff807e4529f7"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/freeze_axis_checkpoint.py",
+      "sha256": "c150753bdce9a3b866b8c2c648241ddeaadbc9069c3096e81e5269c7eb858b80"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/generate_grasp_worlds.py",
+      "sha256": "4af3a6b67ba2320baaedf24f31bc275b35d970edd6a94e555fe6172b780260ce"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/generate_worlds.py",
+      "sha256": "78a471aed341c73b18070a8efeb1cae0ce1c4eda8e58d548d9e3c42597a3574b"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/palm_leveling.py",
+      "sha256": "3c65f75a2f19d0d6da2ecfca581754d863d730e31e5aa68b17bf3684b65f2701"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/prepare_alpha_b.py",
+      "sha256": "23ce2c9ba48b99b847abdd70bd2d50cfcb677d1ea1ee078141622e79a85aa32b"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/review_cube_cartesian.py",
+      "sha256": "e07f9ead598188ec124f9132f386654a7e08d300baf98a07acd70dc1686f807c"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/review_setdown_geometry.py",
+      "sha256": "a2d7009ae649bf71998adcc542d3240efbd9972b11b6a93a44e8569173ffe4f3"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/run_axis_contact_probe.py",
+      "sha256": "eb8ca77504b4198f423acdb876c0a2bacc6a4114d6a5d0b0d761fe00ab01eeb6"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/run_capture_alignment.py",
+      "sha256": "76744abbc80815618e527c0f232d0387d9ab1471330838e162eb1ab659d0268b"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/run_contact_profile_study.py",
+      "sha256": "44f693afcf2903547ce3dd7d6dc784b7fccc7ec2bcb911a621b022654c1d06e9"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/run_contact_width_study.py",
+      "sha256": "602af6d183b621aa107cb7f4d7cec287f264bb004cc4b598a09ac3129aee67a9"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/run_cube_baseline.py",
+      "sha256": "d4f7b2d9ac4c732cc05801963a821efa24f7664d976724e3bba2b3f6ef8801fb"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/run_cube_cartesian.py",
+      "sha256": "eadc9fa73b4a589e8684e1aaedd5652c91779db9f2c70dd5c56673b093bf0f0f"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/run_cube_cartesian_gain.py",
+      "sha256": "94da382329e82dd0fb8d1af82e3e2960ba264381c713143bb1b595450849ae15"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/run_cube_coordinated.py",
+      "sha256": "285ddc3d245e4ff002504885c19f73dc20819bb64b561d2cbcc973c59c531fdb"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/run_cube_leveling.py",
+      "sha256": "f465dbde181490b5b1bb1b9c7db7920927b212f238fed6d510928a53f623e280"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/run_cube_leveling_v2.py",
+      "sha256": "2ef2a3e9fb15af8ac8c2e943796ab473be2aaac7a3c332a1fa654ddc73831d8a"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/run_cube_parallel_pads.py",
+      "sha256": "0806a7c53ece136db2c71cb9fcf39420dcd9fe416b181ab60361496a6c589abc"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/run_empty_validation.py",
+      "sha256": "6d8db9f9bc4370497174f0ce6ea08f611673eb022fc10f142c6529a9eee50a81"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/run_fixed_cadence_checks.py",
+      "sha256": "56463b567a23461870f7f4aaec551cb51e03a9921bec1a07819a8309f70850b6"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/run_folded_approach.py",
+      "sha256": "2518ba3afd1b1ae005cc7e6867eb2c3741ce31f9820f6e596f2b6649b15a065e"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/run_grasp_sweep.py",
+      "sha256": "69305d63b05241fac84d876aaf7f2969fa2f698e25cde66b272bf9efd4fd43e9"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/run_loaded_clearance.py",
+      "sha256": "0dc6eaf11e7e9b7ae4713547cfa9cd7718cf95aa86d53cfbf89ba44c6d4442ec"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/run_prepared_regressions.py",
+      "sha256": "93eb46c44e8de925101dfddd5fa09570d9c7e8c7d74b2a044006e1cfae283fb0"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/run_profile_physics_checks.py",
+      "sha256": "eba30e9e8a6b78e6b501715b7d3d1a99733f904c4144b6a7e0e215dcfcff5036"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/run_profile_robustness.py",
+      "sha256": "ee28bd32a23905a6a465af7899ffb9e610e92dd7b2c4324264e8e0688c2c3a30"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/run_return_cycle.py",
+      "sha256": "4978f70e3ee951ca4f965784217749be53b8562a306398f832bb421481f735e8"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/run_return_regressions.py",
+      "sha256": "37f9f5e095b3b7420846553ff3f9a97b5f4d3462738d5bd8c46b08ee10cf633d"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/summarize_arm_validation.py",
+      "sha256": "ffbab659d28eb8b05c0088e787c34bfcb966897ba10a241b008c5ef87cb802ee"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/summarize_axis_comparison.py",
+      "sha256": "9d28709457509b6b7516c6a2f57e949a51f5d163362bbe42ef05445ed5b50fc7"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/summarize_axis_contact_probe.py",
+      "sha256": "2fcaeabf33cb9ffadd759d42fb4a727b93d872a077c939ab13e4ad2f2a5f1f40"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/summarize_capture_alignment.py",
+      "sha256": "f6442f1e40c36e7b98e03c5a3e8dae38ad637749bf79b6b82ceed1964c171798"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/summarize_claw_validation.py",
+      "sha256": "70c7552070d1a01a221ab38c3d959e8ad3903158cef9db5c52ccb48e537ac780"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/summarize_contact_profile_study.py",
+      "sha256": "cd0f0a041bd70d6b0a6b6c5ee80fe57a7699602d0069ea4df128ed70208bc0ca"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/summarize_contact_width_study.py",
+      "sha256": "f9e307079d0d6dc7695c2c84ab012644c2859626f1d880391ad62220c7d16527"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/summarize_cube_baseline.py",
+      "sha256": "506f9d95e94d12856a88faa6f00c9f6dc630bd21a487c5b9687a3c86b4a0f66e"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/summarize_cube_cartesian.py",
+      "sha256": "41227036c4f547c02a9e26ede3649e8849c2d317644c79a29277437b8eac9c2a"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/summarize_cube_coordinated.py",
+      "sha256": "86569a4a3ee450a4f727a0b3c7b920b375b2f1a718ff46b2f45750b48d94ff69"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/summarize_cube_leveling.py",
+      "sha256": "feb892034e9c78935bd9b5e20fa3f8a95c96a7fd495f0d032424bad843aeec24"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/summarize_fixed_cadence_checks.py",
+      "sha256": "bb68440a7518befdd94430f2725a1c4c8a9e55ad65aefad31471ae0b715f5b43"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/summarize_folded_approach.py",
+      "sha256": "6b3d8dc6b73f8299a3896dd3ff37c6f023e35634e46036756b0fe1e5b8f833ef"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/summarize_grasp_sweep.py",
+      "sha256": "c964fb091adfb261986c7a59267eaa71a0d57a8d3f9731610ce9507c44ac259e"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/summarize_grasp_validation.py",
+      "sha256": "8e63fdb141ab1885f23a879d2e63a933d64a3c686e71205c82e03183eb591f02"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/summarize_loaded_clearance.py",
+      "sha256": "cdb0e26e17c7915ef1fd1b1fadeffe1d78ab6842232b0c13f2d1c4887f2ce8a6"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/summarize_profile_physics_checks.py",
+      "sha256": "57b1e54c13ee9899033aedd32426a72f78eb1154e1234a2166c7d2dae2139715"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/summarize_profile_robustness.py",
+      "sha256": "512e5e7e1376e96b7d050a486264ec60988624167257dec4ab1fd8395baa9ea9"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/summarize_two_finger.py",
+      "sha256": "d1582cad679b38f93ea821b601c8955d423199f423baba41835396e19ff557cf"
+    },
+    {
+      "path": "simulations/model-alpha/scripts/summarize_validation.py",
+      "sha256": "897d053bf63bf7f33446ea6d3e9ed77e453466610e1f4557ab6af66a6c82cbb8"
+    },
+    {
+      "path": "simulations/model-alpha/vision_worker/benchmark.py",
+      "sha256": "d13a3cdc0211242ac985dffb3c59697234553d1f33a54f3a1e3831cad6751bab"
+    },
+    {
+      "path": "simulations/model-alpha/vision_worker/broker.py",
+      "sha256": "14bc0962f2082d64f2cbeb3d71b24ce14ee3dc92f4ff171a5adc8798735a7d33"
+    },
+    {
+      "path": "simulations/model-alpha/vision_worker/context.py",
+      "sha256": "775159d9817894d43d310701830bc7d5b3809038e46753c7a6b5928d4c5bd56d"
+    },
+    {
+      "path": "simulations/model-alpha/vision_worker/pinhole.py",
+      "sha256": "465bce8cb2cbd4a44a5f763980e017605cc207dbf2a759ca85a9f0a8e7854f2e"
+    },
+    {
+      "path": "simulations/model-alpha/vision_worker/pose_core.py",
+      "sha256": "47e861b0f2c65369989c9135665e9533367db25c33f0d2802ed42087e0c202f6"
+    },
+    {
+      "path": "simulations/model-alpha/vision_worker/pose_estimator.py",
+      "sha256": "ee4aa81b9e3e25ae2dbdcefe8afe06babdd83e3af3448c1fe5872b6457940e25"
+    },
+    {
+      "path": "simulations/model-alpha/vision_worker/prepare.py",
+      "sha256": "be70199bca3da03a3961d8312f144dae28a9ae8121827307bc23e1e2eef1a1e4"
+    },
+    {
+      "path": "simulations/model-alpha/vision_worker/seal.py",
+      "sha256": "c86d7009b787a1bd47fcf79b0e5a6851806f11a6b3a03e3a5c44a4b11c4b5785"
+    },
+    {
+      "path": "simulations/model-alpha/vision_worker/test_evidence.py",
+      "sha256": "789ee7d6b615d01c1f798130492d9ecfb125fca5c3c8cd506aa0d4c644bfc4c2"
+    },
+    {
+      "path": "simulations/model-alpha/vision_worker/test_transport.py",
+      "sha256": "f52dbfb76d83cc43af9a6f5e7066f90fa6f84d17ae91fa15cc92473ca9bd7ac8"
+    },
+    {
+      "path": "simulations/model-alpha/vision_worker/worker.py",
+      "sha256": "66b88b439a52e7520746a97f37ceb78064bb4a06e997dc22194d073caa1b6658"
+    },
+    {
+      "path": "simulations/model-alpha/worlds/alpha_axis_contact_probe_a_open_control_validation.wbt",
+      "sha256": "a955301cdba7fbb3ecb4207afc6f632fa175a187ec812c9a2fd2856ce6851d75"
+    },
+    {
+      "path": "simulations/model-alpha/worlds/alpha_axis_contact_probe_a_reference_validation.wbt",
+      "sha256": "ea90bef7d57744fe6242073cdcaf6b0537b8449ae450983a1a119b2acda81019"
+    },
+    {
+      "path": "simulations/model-alpha/worlds/alpha_dynamics.wbt",
+      "sha256": "73ae59c8ae70f5adeb838e49285520ff1d35c2bffdd37ace30853a3f6542c71c"
+    },
+    {
+      "path": "simulations/model-alpha/worlds/alpha_dynamics_arm_elbow_validation.wbt",
+      "sha256": "61f066f547086ef1a97ab14c22d5e8e0d6974ac8edb23a7438a71499ae6d6f13"
+    },
+    {
+      "path": "simulations/model-alpha/worlds/alpha_dynamics_arm_reach_validation.wbt",
+      "sha256": "849683a935b78b68c70d2f0e8323b33f1f87835b9f7cb9d44a384e956152633e"
+    },
+    {
+      "path": "simulations/model-alpha/worlds/alpha_dynamics_arm_shoulder_validation.wbt",
+      "sha256": "b9939780063c9ff587dba423d7b22554f19afe3f7956d5036a5a7f6707bb7f67"
+    },
+    {
+      "path": "simulations/model-alpha/worlds/alpha_dynamics_arm_wrist_validation.wbt",
+      "sha256": "28e58a149ebe5063949a2ae097c25af2d4bc049bcc3b2703ec56acd5acbb87fb"
+    },
+    {
+      "path": "simulations/model-alpha/worlds/alpha_dynamics_claw_cycle_folded_validation.wbt",
+      "sha256": "b6ac5d6e18ec6be506a6455dd90344657a8a28c57b928f5c2d072e947db7b810"
+    },
+    {
+      "path": "simulations/model-alpha/worlds/alpha_dynamics_claw_cycle_raised_validation.wbt",
+      "sha256": "72086817f86f99fb5a97b58e42c7f0baa1664a068236827664393d56898a9e05"
+    },
+    {
+      "path": "simulations/model-alpha/worlds/alpha_dynamics_drive_validation.wbt",
+      "sha256": "e6e9e9071337378c8c7d6109592f0e0feee03738863ccd99d248a7e0cdf7784b"
+    },
+    {
+      "path": "simulations/model-alpha/worlds/alpha_dynamics_pose_guard_validation.wbt",
+      "sha256": "4fabf4793d5154a87e1d929515aa11bfeed3d29590adb44e32b1325ff7348ce5"
+    },
+    {
+      "path": "simulations/model-alpha/worlds/alpha_dynamics_push_validation.wbt",
+      "sha256": "936463f91d9d1f79fc8688aa8c1fe2d35c29b3a565b1cc8deb7be4a6697e1bc7"
+    },
+    {
+      "path": "simulations/model-alpha/worlds/alpha_dynamics_steering_validation.wbt",
+      "sha256": "c6f866e73acc2474a995859706a786cb61779a8b9c23df8f2c3230c881075aa8"
+    },
+    {
+      "path": "simulations/model-alpha/worlds/alpha_dynamics_tilt_negative_validation.wbt",
+      "sha256": "922a0675f4fa590ba81704df3d4cced8032047f25fd941a3a5ad17792c56c7ec"
+    },
+    {
+      "path": "simulations/model-alpha/worlds/alpha_dynamics_tilt_positive_validation.wbt",
+      "sha256": "3a410bd9538934db0204edfd4444e109c6157e4220bf58e41eef7700fa6b3131"
+    },
+    {
+      "path": "simulations/model-alpha/worlds/alpha_dynamics_validation.wbt",
+      "sha256": "8d204a01528a3d05cd346a6ef238764c28ff09324ad76554f262401bc28951a1"
+    },
+    {
+      "path": "simulations/model-alpha/worlds/alpha_geometry.wbt",
+      "sha256": "8e1b230726cbc096d024a062d387984f223c0994fe958fedca67ae17afe85963"
+    },
+    {
+      "path": "simulations/model-alpha/worlds/alpha_geometry_validation.wbt",
+      "sha256": "884bf144409eb9e0d42c19dd6eaa247bcff9c12a27fb533175b0441cc7fcf541"
+    },
+    {
+      "path": "simulations/model-alpha-b/comparison-setup.json",
+      "sha256": "b49539ee062e2efd62c04ab828c0ebeb782142147cbe2c8fe73a5978fabcd3e9"
+    },
+    {
+      "path": "simulations/model-alpha-b/launch.ps1",
+      "sha256": "206f0c0d6d38c059bdb8b4e6a75004d477ee0fbd6febcde7664bd7dddd728762"
+    },
+    {
+      "path": "simulations/model-alpha-b/parameters.json",
+      "sha256": "f84433038e461dec2002ec1e2429a137695520297ab1a0aae69ee2eeaf45824d"
+    },
+    {
+      "path": "simulations/model-alpha-b/README.md",
+      "sha256": "f2c87bb002221c2507aaa2d20cb53ab7edc08cb1bf793d05394f5de9440b748c"
+    },
+    {
+      "path": "simulations/model-alpha-b/controllers/grasp_controller/approach_planning.py",
+      "sha256": "4dd0d939ad7417a937083d68d95a0e246127df4a80b4213144eb88b057264c14"
+    },
+    {
+      "path": "simulations/model-alpha-b/controllers/grasp_controller/capture_planning.py",
+      "sha256": "e593943c20fafe19faecdfeed1e98fd8dc1a0fe6cd8e9670defd689c0006eaac"
+    },
+    {
+      "path": "simulations/model-alpha-b/controllers/grasp_controller/control_math.py",
+      "sha256": "2e6b6bda965523d57d5ea6d3db6579ab68351ab86091b778cdaedff48bd539d0"
+    },
+    {
+      "path": "simulations/model-alpha-b/controllers/grasp_controller/grasp_controller.py",
+      "sha256": "9dcd0c596ad1b85772d9887b79545660a356101f33c9c3373c817dfa22aed19f"
+    },
+    {
+      "path": "simulations/model-alpha-b/controllers/grasp_controller/grasp_planning.py",
+      "sha256": "97de6bc54039bb18e2a6611bd428697462503374c704fe048111c57a4b4ea2fd"
+    },
+    {
+      "path": "simulations/model-alpha-b/controllers/grasp_controller/mass_properties.py",
+      "sha256": "4cbcbc74d1022a9685f5b1e4c0a10b71b9dfab1280b48a8a95e268acb7e5c470"
+    },
+    {
+      "path": "simulations/model-alpha-b/controllers/grasp_controller/return_planning.py",
+      "sha256": "c150a69a20819b53da3e926fb6063bf9f88d25a18a8b7985651c203a4b94f2da"
+    },
+    {
+      "path": "simulations/model-alpha-b/controllers/robot_controller/control_math.py",
+      "sha256": "2e6b6bda965523d57d5ea6d3db6579ab68351ab86091b778cdaedff48bd539d0"
+    },
+    {
+      "path": "simulations/model-alpha-b/controllers/robot_controller/mass_properties.py",
+      "sha256": "4cbcbc74d1022a9685f5b1e4c0a10b71b9dfab1280b48a8a95e268acb7e5c470"
+    },
+    {
+      "path": "simulations/model-alpha-b/controllers/robot_controller/robot_controller.py",
+      "sha256": "f3949a4b33a1f5d5cb7b330426de23849f554ca645eaed5ccd4ed84c9a74f0d3"
+    },
+    {
+      "path": "simulations/model-alpha-b/scripts/generate_grasp_worlds.py",
+      "sha256": "4af3a6b67ba2320baaedf24f31bc275b35d970edd6a94e555fe6172b780260ce"
+    },
+    {
+      "path": "simulations/model-alpha-b/scripts/generate_worlds.py",
+      "sha256": "78a471aed341c73b18070a8efeb1cae0ce1c4eda8e58d548d9e3c42597a3574b"
+    },
+    {
+      "path": "simulations/model-alpha-b/worlds/alpha-b_dynamics.wbt",
+      "sha256": "658281b91250ddf4c369ea3bdf0c4f8fe72f73356cc0450b42b5330ca2921a71"
+    },
+    {
+      "path": "simulations/model-alpha-b/worlds/alpha-b_dynamics_arm_elbow_validation.wbt",
+      "sha256": "52c7543d1a6145619bb5a156521f176f4b49340eea2d9779180d68ba0eacff00"
+    },
+    {
+      "path": "simulations/model-alpha-b/worlds/alpha-b_dynamics_arm_reach_validation.wbt",
+      "sha256": "3594fb8c4d7d7f75aba0136b14e4050c6930a0c27344a15d2f1c2c13c00e5e16"
+    },
+    {
+      "path": "simulations/model-alpha-b/worlds/alpha-b_dynamics_arm_shoulder_validation.wbt",
+      "sha256": "0422ec11c83c6d7c9884deafee34f2ee7e2c93148f3712e9ee8acd297b463b24"
+    },
+    {
+      "path": "simulations/model-alpha-b/worlds/alpha-b_dynamics_arm_wrist_validation.wbt",
+      "sha256": "4d3b06b2d2c59ebce4e42903b454bfad7258ccfbcaf4b78eff529c88d89ed27a"
+    },
+    {
+      "path": "simulations/model-alpha-b/worlds/alpha-b_dynamics_claw_cycle_folded_validation.wbt",
+      "sha256": "9431a4417bb865f97f18a993e4f55900549feeca3f19744d23c38ca557682e90"
+    },
+    {
+      "path": "simulations/model-alpha-b/worlds/alpha-b_dynamics_claw_cycle_raised_validation.wbt",
+      "sha256": "d20f122d7791bbcd398d4302c739d1bb95f56cb3c7fc53ad928c1d1d1c8daef0"
+    },
+    {
+      "path": "simulations/model-alpha-b/worlds/alpha-b_dynamics_drive_validation.wbt",
+      "sha256": "5f9573897f5105174bea62b5a21a83cc43363fcfd1720899e657938b021abb01"
+    },
+    {
+      "path": "simulations/model-alpha-b/worlds/alpha-b_dynamics_pose_guard_validation.wbt",
+      "sha256": "436e165cc3e906eeb7abf42550e3556095389e3de0ce91ccc9f5003fe1c76f37"
+    },
+    {
+      "path": "simulations/model-alpha-b/worlds/alpha-b_dynamics_push_validation.wbt",
+      "sha256": "43a571fbdd5298bca135cd732fbd25c75510242ecf529b797f28102f7740ee4b"
+    },
+    {
+      "path": "simulations/model-alpha-b/worlds/alpha-b_dynamics_steering_validation.wbt",
+      "sha256": "68a95a150069718cb2ad1bbac2285c1703246fbbe7c20b8c921eb323a937b3ee"
+    },
+    {
+      "path": "simulations/model-alpha-b/worlds/alpha-b_dynamics_tilt_negative_validation.wbt",
+      "sha256": "4b0671d8fe51b41ed74c96544cb6938b2ba939fca3273a237fd3ef9aa4a01421"
+    },
+    {
+      "path": "simulations/model-alpha-b/worlds/alpha-b_dynamics_tilt_positive_validation.wbt",
+      "sha256": "59f64a88ec51037a9e9e577113a898494df4679a60b032951d2c97999033b4ec"
+    },
+    {
+      "path": "simulations/model-alpha-b/worlds/alpha-b_dynamics_validation.wbt",
+      "sha256": "dcfd06eef3aab69105ec686cb8e968f74709e38ec35f8df3d86391662e11eaac"
+    },
+    {
+      "path": "simulations/model-alpha-b/worlds/alpha-b_geometry.wbt",
+      "sha256": "d59a38be87996efc8c30d68a91586c56c3bac0f713c0dc6cb68f6c05339b15ec"
+    },
+    {
+      "path": "simulations/model-alpha-b/worlds/alpha-b_geometry_validation.wbt",
+      "sha256": "92745cc4254531ace9457639c5b17673ed44e8a0ffe6ce58742605206a6e35c1"
+    },
+    {
+      "path": "simulations/model-alpha-b/worlds/alpha_axis_contact_probe_b_open_control_validation.wbt",
+      "sha256": "e8bfbf3af06b76d56927dbe96c797338f39e841533c39f94f4fece3ed6005421"
+    },
+    {
+      "path": "simulations/model-alpha-b/worlds/alpha_axis_contact_probe_b_reference_validation.wbt",
+      "sha256": "fc8a557d418c01f7efbc76f0c6dfad06ff50b6a75fbe9dc55f39ba2a33a9c430"
+    },
+    {
+      "path": "simulations/model-beta/launch.ps1",
+      "sha256": "266be9e7ed2c6f27f041fe8c289049f515ae6e57ebc4d853d1495f9cf8a6a9c0"
+    },
+    {
+      "path": "simulations/model-beta/parameters.json",
+      "sha256": "0886a653d264452315184817526d459620d0ab521d25f57b9f5b2ca21bbc74c6"
+    },
+    {
+      "path": "simulations/model-beta/README.md",
+      "sha256": "af6c71ca50b82560cb6be2fe3f7e602eb2f1657a51470fd3f3151fbe69baf2f0"
+    },
+    {
+      "path": "simulations/model-beta/controllers/robot_controller/control_math.py",
+      "sha256": "2e6b6bda965523d57d5ea6d3db6579ab68351ab86091b778cdaedff48bd539d0"
+    },
+    {
+      "path": "simulations/model-beta/controllers/robot_controller/mass_properties.py",
+      "sha256": "4cbcbc74d1022a9685f5b1e4c0a10b71b9dfab1280b48a8a95e268acb7e5c470"
+    },
+    {
+      "path": "simulations/model-beta/controllers/robot_controller/robot_controller.py",
+      "sha256": "f3949a4b33a1f5d5cb7b330426de23849f554ca645eaed5ccd4ed84c9a74f0d3"
+    },
+    {
+      "path": "simulations/model-beta/scripts/generate_worlds.py",
+      "sha256": "78a471aed341c73b18070a8efeb1cae0ce1c4eda8e58d548d9e3c42597a3574b"
+    },
+    {
+      "path": "simulations/model-beta/worlds/beta_dynamics.wbt",
+      "sha256": "2751aaee3d6c100cdc6a8846d735dd1f9504efd41925e9057501558f57b965ed"
+    },
+    {
+      "path": "simulations/model-beta/worlds/beta_dynamics_drive_validation.wbt",
+      "sha256": "c6f384a073e7781f6f6c7039256708e60e22524f1942bc22f4f9577a135b8bde"
+    },
+    {
+      "path": "simulations/model-beta/worlds/beta_dynamics_push_validation.wbt",
+      "sha256": "9c423d7cde5a28f98fa908ac6402cfdaac2ffc9d17abe73f70f9ef5db5466d30"
+    },
+    {
+      "path": "simulations/model-beta/worlds/beta_dynamics_steering_validation.wbt",
+      "sha256": "0b96f7838456711a15cc0e694f390d178dbe6cbc22887502882cad4bd62f2e80"
+    },
+    {
+      "path": "simulations/model-beta/worlds/beta_dynamics_tilt_negative_validation.wbt",
+      "sha256": "8340bac87c6fa930ab205569f5dc13d12a79cf2768f9ee78ce2b886467435e7b"
+    },
+    {
+      "path": "simulations/model-beta/worlds/beta_dynamics_tilt_positive_validation.wbt",
+      "sha256": "6e7cb3766d3c19adba020fb927c556d3e5af1d8dff95012d7aaa287eaf13b605"
+    },
+    {
+      "path": "simulations/model-beta/worlds/beta_dynamics_validation.wbt",
+      "sha256": "60ceed7177ed516d33b1a1e6d4bfcb5ef5cd9c3c5977c7093dfe6dbbb42cc80a"
+    },
+    {
+      "path": "simulations/model-beta/worlds/beta_geometry.wbt",
+      "sha256": "4f764b79b2e99a4dec7e553a45bc7e253b700ecb16b9d140e60f313c618f7cb6"
+    },
+    {
+      "path": "simulations/model-beta/worlds/beta_geometry_validation.wbt",
+      "sha256": "ab38f25fab51e6154fbaea3ff5b426d264a09a8ee47437eac56eb4858bac07b9"
+    },
+    {
+      "path": "simulations/model-x/README.md",
+      "sha256": "4a85559e5f081910e9a89b76372f00c3eb8e87cf497a0c6fe72a97705bc39234"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/extract_controller/extract_controller.py",
+      "sha256": "42c332e62b9ec32833aaf4f366e42d380e45daa397e3f14eba31835e4cb08522"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/attitude_shadow.py",
+      "sha256": "53a3d726bcef4f0ce84aebe52199ede0aaa3fabe7e3f75701ca69381f87d64ed"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/audit_reference.py",
+      "sha256": "6d89f5c15024eb9b8d825df5299855f94333ee2cdd0e19e7cb09243df785eb0d"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/bench_math.py",
+      "sha256": "c092e80b67fc3a740d5b15ea41a9f4564c5f4ea4b2552a642b82dde8179b6b18"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/buffer.py",
+      "sha256": "389efce3d5253173f0ac95cce9ad2fb5f38a3c90b293f97bac570df1b833b4ba"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/consumer.py",
+      "sha256": "37b386c137665194e44779efa265a2e807be8e03a3e19ad5bd4efc46f3b83d62"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/consumer200.py",
+      "sha256": "0d5223feb96b6baaecb583e552fb7806cb01171a713e8929b0ff9fe0ef71ef3b"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/controller_core.py",
+      "sha256": "b3c7a8c575c6aaa5f72274aff4a1c6a68a9f802e322d21faf4dcad8713b9a6e3"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/control_math.py",
+      "sha256": "ef121edbd6c496e98e136852c8c76cfd3ba219129ae2160fcb3bfc60ad33276a"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/cube_geometry.py",
+      "sha256": "1033e9b0fffb9bc7ae29050db6d24d59ab90f8c86c1b09f99949ff807e4529f7"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/dynamics_core.py",
+      "sha256": "32b9e2ed7785f82096d940c9ae75cd03135052b90cb050a141b3147a0c5cba8c"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/fixture_sensor.py",
+      "sha256": "499d0a58bce8db9771fc2d04b1051afbefbd87798b895ee6e8844c5f9af4f030"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/frame_math.py",
+      "sha256": "f28e42f9d968cc2743471c18ef2eca2b5de736475194ab210a3e10f364d3912e"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/full200.py",
+      "sha256": "4aac0b81a9ed6a0023f94c249b5204ef0397861728f9c2974258d4a96a7276dc"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/grasp_policy.py",
+      "sha256": "6955b0640d769d9f2e48bf112d183461d6348f593818c693373e5b061a8e0953"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/history.py",
+      "sha256": "7dfb6f935f4ffcaa825bf4785b67e450f6b4f688ec73ef9f619ad4fe3abdcd62"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/history200.py",
+      "sha256": "e14eedfc2a9999c93d8cbd3ba8d216961b87fec387b23519a8ae849ddb740a99"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/host_consumer.py",
+      "sha256": "e7d255cb48131ec8bd23aa5a264b3a415a9ad7c0e0fe83b3ad0728c75554e141"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/manip_controller.py",
+      "sha256": "1fb2c0c01f4ffba687b893645f7cff7acee4d7601f264fcceee0338f102cfc75"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/manip_math.py",
+      "sha256": "03580fbbd6cce0b53c8d497a74a49c8ce8deee76f850d1de38d53ff4c0f99d0a"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/mass_properties.py",
+      "sha256": "e37a35a6553a811388bcffca85a817405324cb55427e954810ff0068ae0ead3b"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/measurement.py",
+      "sha256": "ca39c6ccd41844512150e6d6e315a063bdba168c10ea922c90519902c605767c"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/mission_bridge.py",
+      "sha256": "82222a62b948a0da71960ccb768f2bba0ddaab605547cb009cb8c6975e03ccc8"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/mission_reference.py",
+      "sha256": "ece5f40bf1e2ce5b5a9f816e9e89bef9db46a9aaccf6e49fb05bc487d00049a5"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/observations.py",
+      "sha256": "8e6ff808b784265b94e8dbeb2cc6aa01eb2aaf09daac61380fd66eb945d03d5e"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/observed200.py",
+      "sha256": "e3ff29c9130901dbcc1d9f1c4142f961cea897fb039be810682e3e9c8776c26e"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/owner.py",
+      "sha256": "97e42cfcbd90d5ddc7d6b9d91fce7590ef8b2ad529ad5163a9b3f42c073c9d08"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/path_math.py",
+      "sha256": "ecbd0cba6472f8ed51217aeb34ccbec84c0368b1073598f9549cdcd2f9faa5ae"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/payload_math.py",
+      "sha256": "273acb2283f1ad4afbfd0f5334f1e8867b78d8b7a23960e5465cceb38701ac00"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/planning.py",
+      "sha256": "0380fa7ee5708db7d031a9c6ae3c1ec335cfa366364534c115c48f6543d0ab0a"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/policy.py",
+      "sha256": "bb1d686c28b03cb631124bc85e7fb52d879b7a4441a02939e31176a8583bfa12"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/projection.py",
+      "sha256": "e6dab5b5c826d29811278965eca226ab0c2d89aef8da2cb70762fd125d5e4e14"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/projection200.py",
+      "sha256": "d1bf10d4bfc37f7af81eb4bbaf9fb18ab4d6044a8ad0d0032c9d6f1bb00c6c60"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/route_math.py",
+      "sha256": "99e8cfb46de7a83bd550af67c372a4b2ba08536054fb8bccce5854906b460a22"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/sidecar200.py",
+      "sha256": "8b9ba42e5bdad36cf50ebf889ef1c9d09a110e3bda1210aa53bb31f24373b9d6"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/solid_math.py",
+      "sha256": "0666625dc3733d0e1dc02d1cee1cd94aaa642452d95d0c452984797b7def4b8c"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/support_reference.py",
+      "sha256": "841a5dc55b367a39d588fb71fa8a273d6676bd94e253b57ac6e94fba855359e4"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/timed_shadow.py",
+      "sha256": "863aa4c0ec12a3af0583934820de9c91d185726a3bf5bd132e22f66965683613"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/tracking_math.py",
+      "sha256": "552e8ac1cbbd28a907cb2b0cb4a5ad613904d5553b4cde231ae07bfee115a729"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/transit_math.py",
+      "sha256": "1875c91e48bdf36e0f5019cbadf7fcab1c1126342dc58f7e4f0cf0752e805e76"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/turn_math.py",
+      "sha256": "9a030d1b9d0caf3a03fa1f6a18f198aa4abc627491875346394acfe3ccc38fdb"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/controllers/manip_controller/wrench_sensor.py",
+      "sha256": "04269bc7270f1c88bcdd15df679a0e6c23a215f175e729872e83756a4028d9a0"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/plugins/physics/robot_cfm_guard/contact_observer.inc",
+      "sha256": "bccd0dde28626bb433c194d8ec3467cb54ea99cc859bd5a6711d146d0b009bd5"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/plugins/physics/robot_cfm_guard/fixture_face_math.inc",
+      "sha256": "a3ffa9ad3c081afc82008d1831fa463042af96d4f79cf7e5ee712233acd39f7e"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/plugins/physics/robot_cfm_guard/fixture_logger.inc",
+      "sha256": "9df44877c6b7321444e7faebe24174015f5e50a7d17dea75c1845403520111a4"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/plugins/physics/robot_cfm_guard/live_packet.inc",
+      "sha256": "eb88c6d32cbe14756f57079c843b96d2832ca7ff31fdf60ae3d9930375dffa02"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/plugins/physics/robot_cfm_guard/raw200_native.inc",
+      "sha256": "ed9d1732fca04dbd22074b4b3679b7a268448235202f007f1d688a614fd8abe7"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/plugins/physics/robot_cfm_guard/robot_cfm_guard.c",
+      "sha256": "8ae0ee77df3212a4e2b138d5420877c1ffaf68fe83087ac5028815329d2a0330"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/worlds/integrated_0.25.wbt",
+      "sha256": "7c9a52f7588b14f40264019e159d2e265e4c48d817ade1f48bffc74de18110fb"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/parameters.json",
+      "sha256": "cdc8a75dfea4c7d8b1aaf406dbed288e7bffb8ced27f6b168ca346360f770aff"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/case.json",
+      "sha256": "ebd8f0d93a80131a1906d705f0e08d879197f7df8781bd0208b2effea948279b"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/setup.json",
+      "sha256": "81e59f3698430065a350deba8d8bdd3905a62c18ffdbead72fdcc7110d85e93d"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/prepared-model.json",
+      "sha256": "6d5f7f6c3cd6936a2102f41693ddc74c2ad1429724ee276d0a89b195c78ccadb"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/model-properties.csv",
+      "sha256": "674043449d9df57410c5e5b2ed082da6ed5d626d90c95d6268704cd9165692af"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/torque-design.json",
+      "sha256": "c1ae332e6591189af2873e083e683ae1412de4e40f3f41bb1cbc94ce92ebcced"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/normalization.json",
+      "sha256": "59285b29490baeeb30a7dd78144017ce2a174cd779cb5964c85edc94bce5051f"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/reference-table.json",
+      "sha256": "f65092ba90d8d1bf4b6fc615e348c28598e56c2edfd6a7a3aa8b2349d48e330b"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-a/collision-fixtures.json",
+      "sha256": "6aa5eb77e1b47a7997866ceb55443104661194d004db3281b5425d46cf10894a"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/extract_controller/extract_controller.py",
+      "sha256": "42c332e62b9ec32833aaf4f366e42d380e45daa397e3f14eba31835e4cb08522"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/attitude_shadow.py",
+      "sha256": "53a3d726bcef4f0ce84aebe52199ede0aaa3fabe7e3f75701ca69381f87d64ed"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/audit_reference.py",
+      "sha256": "6d89f5c15024eb9b8d825df5299855f94333ee2cdd0e19e7cb09243df785eb0d"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/bench_math.py",
+      "sha256": "c092e80b67fc3a740d5b15ea41a9f4564c5f4ea4b2552a642b82dde8179b6b18"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/buffer.py",
+      "sha256": "389efce3d5253173f0ac95cce9ad2fb5f38a3c90b293f97bac570df1b833b4ba"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/consumer.py",
+      "sha256": "37b386c137665194e44779efa265a2e807be8e03a3e19ad5bd4efc46f3b83d62"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/consumer200.py",
+      "sha256": "0d5223feb96b6baaecb583e552fb7806cb01171a713e8929b0ff9fe0ef71ef3b"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/controller_core.py",
+      "sha256": "b3c7a8c575c6aaa5f72274aff4a1c6a68a9f802e322d21faf4dcad8713b9a6e3"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/control_math.py",
+      "sha256": "ef121edbd6c496e98e136852c8c76cfd3ba219129ae2160fcb3bfc60ad33276a"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/cube_geometry.py",
+      "sha256": "1033e9b0fffb9bc7ae29050db6d24d59ab90f8c86c1b09f99949ff807e4529f7"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/dynamics_core.py",
+      "sha256": "32b9e2ed7785f82096d940c9ae75cd03135052b90cb050a141b3147a0c5cba8c"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/fixture_sensor.py",
+      "sha256": "499d0a58bce8db9771fc2d04b1051afbefbd87798b895ee6e8844c5f9af4f030"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/frame_math.py",
+      "sha256": "f28e42f9d968cc2743471c18ef2eca2b5de736475194ab210a3e10f364d3912e"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/full200.py",
+      "sha256": "4aac0b81a9ed6a0023f94c249b5204ef0397861728f9c2974258d4a96a7276dc"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/grasp_policy.py",
+      "sha256": "6955b0640d769d9f2e48bf112d183461d6348f593818c693373e5b061a8e0953"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/history.py",
+      "sha256": "7dfb6f935f4ffcaa825bf4785b67e450f6b4f688ec73ef9f619ad4fe3abdcd62"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/history200.py",
+      "sha256": "e14eedfc2a9999c93d8cbd3ba8d216961b87fec387b23519a8ae849ddb740a99"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/host_consumer.py",
+      "sha256": "e7d255cb48131ec8bd23aa5a264b3a415a9ad7c0e0fe83b3ad0728c75554e141"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/manip_controller.py",
+      "sha256": "1fb2c0c01f4ffba687b893645f7cff7acee4d7601f264fcceee0338f102cfc75"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/manip_math.py",
+      "sha256": "03580fbbd6cce0b53c8d497a74a49c8ce8deee76f850d1de38d53ff4c0f99d0a"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/mass_properties.py",
+      "sha256": "e37a35a6553a811388bcffca85a817405324cb55427e954810ff0068ae0ead3b"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/measurement.py",
+      "sha256": "ca39c6ccd41844512150e6d6e315a063bdba168c10ea922c90519902c605767c"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/mission_bridge.py",
+      "sha256": "82222a62b948a0da71960ccb768f2bba0ddaab605547cb009cb8c6975e03ccc8"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/mission_reference.py",
+      "sha256": "ece5f40bf1e2ce5b5a9f816e9e89bef9db46a9aaccf6e49fb05bc487d00049a5"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/observations.py",
+      "sha256": "8e6ff808b784265b94e8dbeb2cc6aa01eb2aaf09daac61380fd66eb945d03d5e"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/observed200.py",
+      "sha256": "e3ff29c9130901dbcc1d9f1c4142f961cea897fb039be810682e3e9c8776c26e"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/owner.py",
+      "sha256": "97e42cfcbd90d5ddc7d6b9d91fce7590ef8b2ad529ad5163a9b3f42c073c9d08"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/path_math.py",
+      "sha256": "ecbd0cba6472f8ed51217aeb34ccbec84c0368b1073598f9549cdcd2f9faa5ae"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/payload_math.py",
+      "sha256": "273acb2283f1ad4afbfd0f5334f1e8867b78d8b7a23960e5465cceb38701ac00"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/planning.py",
+      "sha256": "0380fa7ee5708db7d031a9c6ae3c1ec335cfa366364534c115c48f6543d0ab0a"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/policy.py",
+      "sha256": "bb1d686c28b03cb631124bc85e7fb52d879b7a4441a02939e31176a8583bfa12"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/projection.py",
+      "sha256": "e6dab5b5c826d29811278965eca226ab0c2d89aef8da2cb70762fd125d5e4e14"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/projection200.py",
+      "sha256": "d1bf10d4bfc37f7af81eb4bbaf9fb18ab4d6044a8ad0d0032c9d6f1bb00c6c60"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/route_math.py",
+      "sha256": "99e8cfb46de7a83bd550af67c372a4b2ba08536054fb8bccce5854906b460a22"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/sidecar200.py",
+      "sha256": "8b9ba42e5bdad36cf50ebf889ef1c9d09a110e3bda1210aa53bb31f24373b9d6"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/solid_math.py",
+      "sha256": "0666625dc3733d0e1dc02d1cee1cd94aaa642452d95d0c452984797b7def4b8c"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/support_reference.py",
+      "sha256": "841a5dc55b367a39d588fb71fa8a273d6676bd94e253b57ac6e94fba855359e4"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/timed_shadow.py",
+      "sha256": "863aa4c0ec12a3af0583934820de9c91d185726a3bf5bd132e22f66965683613"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/tracking_math.py",
+      "sha256": "552e8ac1cbbd28a907cb2b0cb4a5ad613904d5553b4cde231ae07bfee115a729"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/transit_math.py",
+      "sha256": "1875c91e48bdf36e0f5019cbadf7fcab1c1126342dc58f7e4f0cf0752e805e76"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/turn_math.py",
+      "sha256": "9a030d1b9d0caf3a03fa1f6a18f198aa4abc627491875346394acfe3ccc38fdb"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/controllers/manip_controller/wrench_sensor.py",
+      "sha256": "04269bc7270f1c88bcdd15df679a0e6c23a215f175e729872e83756a4028d9a0"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/plugins/physics/robot_cfm_guard/contact_observer.inc",
+      "sha256": "bccd0dde28626bb433c194d8ec3467cb54ea99cc859bd5a6711d146d0b009bd5"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/plugins/physics/robot_cfm_guard/fixture_face_math.inc",
+      "sha256": "a3ffa9ad3c081afc82008d1831fa463042af96d4f79cf7e5ee712233acd39f7e"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/plugins/physics/robot_cfm_guard/fixture_logger.inc",
+      "sha256": "9df44877c6b7321444e7faebe24174015f5e50a7d17dea75c1845403520111a4"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/plugins/physics/robot_cfm_guard/live_packet.inc",
+      "sha256": "eb88c6d32cbe14756f57079c843b96d2832ca7ff31fdf60ae3d9930375dffa02"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/plugins/physics/robot_cfm_guard/raw200_native.inc",
+      "sha256": "ed9d1732fca04dbd22074b4b3679b7a268448235202f007f1d688a614fd8abe7"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/plugins/physics/robot_cfm_guard/robot_cfm_guard.c",
+      "sha256": "8ae0ee77df3212a4e2b138d5420877c1ffaf68fe83087ac5028815329d2a0330"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/worlds/integrated_0.25.wbt",
+      "sha256": "86c0472ebfdef8768a91cfd2ab1912664053eed61e700084b812d3a4c1a9ec6b"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/parameters.json",
+      "sha256": "ac061ce48e4b97db90f6323dd8069c58da6a3ee67289d717f926bfcdaeb905c5"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/case.json",
+      "sha256": "5b51d7488f01f6755f266773372c6e5ff9e6ee7c09a68f4082a97e2010056098"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/setup.json",
+      "sha256": "81e59f3698430065a350deba8d8bdd3905a62c18ffdbead72fdcc7110d85e93d"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/prepared-model.json",
+      "sha256": "b56d2d5818c951f46376e1140f18ff9d7f315a0084b19945e216c7d375834ce9"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/model-properties.csv",
+      "sha256": "2ca8465e0308f63d32bef77d45d8418491ff3addf697a59fabe96c4f6af95510"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/torque-design.json",
+      "sha256": "789473e99a6d9c047c88499a1334adfd1457e214cd702fe6a6c72865bb7f78f7"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/normalization.json",
+      "sha256": "59285b29490baeeb30a7dd78144017ce2a174cd779cb5964c85edc94bce5051f"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/reference-table.json",
+      "sha256": "8e8cc6c045b36b4184ea4a2abd3cea6be163ac77801e5ac02437c703fbd2c434"
+    },
+    {
+      "path": "simulations/model-alpha/native-reference/alpha-b/collision-fixtures.json",
+      "sha256": "ca00bffba49140287289b5160a12f4a32a2a1492e05e703da3dea5c608dae3cd"
+    }
+  ],
+  "export_adaptations": [
+    "Top-level public overview and docs",
+    "Blank NumPy runtime path for native source reference",
+    "No compiled plugins or machine Python runtime settings"
+  ]
+}

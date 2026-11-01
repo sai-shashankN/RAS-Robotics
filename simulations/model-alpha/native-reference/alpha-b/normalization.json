@@ -1,0 +1,9 @@
+{
+  "physics_ms": 0.25,
+  "world_erp": 0.1111111111111111,
+  "world_cfm": 1.1111111111111112e-05,
+  "contact_erp": 0.11111111111111113,
+  "contact_cfm": 0.0011111111111111111,
+  "motor_cfm": 1e-05,
+  "friction_row_cfm": 1e-05
+}

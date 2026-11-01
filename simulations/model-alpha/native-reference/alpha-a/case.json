@@ -1,0 +1,39 @@
+{
+  "variant": "a",
+  "initial_pose": {
+    "shoulder": -0.5792997338867392,
+    "elbow": 1.597185478083748,
+    "wrist": 2.1237069093927845,
+    "finger": -0.3,
+    "distal": 0.3
+  },
+  "initial_base_x_m": 0.005821721460929713,
+  "initial_pitch_rad": 0.0,
+  "secured_mass_kg": 0.0,
+  "start_settle_s": 5.0,
+  "motion_s": 55.0,
+  "duration_s": 65.0,
+  "gates": {
+    "max_abs_pitch_rad": 0.3490658503988659,
+    "max_reference_rad": 0.3,
+    "max_final_pitch_error_rad": 0.017453292519943295,
+    "max_hand_error_m": 0.003,
+    "max_hand_y_error_m": 0.003,
+    "max_palm_pitch_error_rad": 0.03490658503988659,
+    "max_final_hand_error_m": 0.001,
+    "max_final_palm_pitch_rad": 0.008726646259971648,
+    "max_main_tracking_error_rad": 0.03,
+    "max_command_rate_rad_s": 0.08,
+    "max_finger_command_rate_rad_s": 0.3,
+    "max_final_base_error_m": 0.005,
+    "max_final_speed_m_s": 0.01,
+    "max_yaw_rad": 0.05,
+    "max_final_yaw_rate_rad_s": 0.05,
+    "wheel_speed_tolerance_rad_s": 0.5,
+    "wheel_command_cap_fraction": 0.9,
+    "min_lift_hand_excursion_m": 0.008,
+    "min_overall_hand_excursion_m": 0.014,
+    "max_com_model_error_m": 0.002,
+    "max_range_excess_rad": 0.03
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "C:\\Users\\LENOVO\\Specializations\\RAS\\Robotics\\.local-tools\\webots\\msys64\\mingw64\\bin\\gcc.exe",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-shared",
+    "-IC:\\Users\\LENOVO\\Specializations\\RAS\\Robotics\\.local-tools\\webots\\include",
+    "-IC:\\Users\\LENOVO\\Specializations\\RAS\\Robotics\\.local-tools\\webots\\include\\ode",
+    "C:\\Users\\LENOVO\\Specializations\\RAS\\Robotics\\simulations\\model-alpha\\impact_probe\\impact_probe.c",
+    "C:\\Users\\LENOVO\\Specializations\\RAS\\Robotics\\.local-tools\\webots\\resources\\projects\\plugins\\physics\\physics.o",
+    "C:\\Users\\LENOVO\\Specializations\\RAS\\Robotics\\.local-tools\\webots\\msys64\\mingw64\\bin\\ode.dll",
+    "-lpthread",
+    "-o",
+    "C:\\Users\\LENOVO\\Specializations\\RAS\\Robotics\\simulations\\model-alpha\\impact_probe\\build\\impact_probe.dll"
+  ],
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "C:\\Users\\LENOVO\\Specializations\\RAS\\Robotics\\simulations\\model-alpha\\impact_probe\\impact_probe.c: In function 'webots_physics_collide':\nC:\\Users\\LENOVO\\Specializations\\RAS\\Robotics\\simulations\\model-alpha\\impact_probe\\impact_probe.c:27:3: error: this 'if' clause does not guard... [-Werror=misleading-indentation]\n   27 |   if(dGeomIsSpace(a)||dGeomIsSpace(b))return 0;pthread_mutex_lock(&mutex);\n      |   ^~\nC:\\Users\\LENOVO\\Specializations\\RAS\\Robotics\\simulations\\model-alpha\\impact_probe\\impact_probe.c:27:48: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'\n   27 |   if(dGeomIsSpace(a)||dGeomIsSpace(b))return 0;pthread_mutex_lock(&mutex);\n      |                                                ^~~~~~~~~~~~~~~~~~\ncc1.exe: all warnings being treated as errors\n",
+  "source_sha256": "1f8cbd90c5d71c440fb1c52f66ab248e6786dfda65f3386f3c0f892c75982a85",
+  "support_sha256": "f805a16ed50f63267e4dabe8e2b22b76bbf9c5c4d4d962c67c406a27f26e1e7b",
+  "ode_sha256": "89c937bc592bf88ce01c8dc56fe78aae83137364496e423c5216bfc5030ae3cc",
+  "dll_sha256": null
+}

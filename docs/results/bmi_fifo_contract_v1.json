@@ -1,0 +1,19 @@
+{
+  "study": "bmi_fifo_contract_v1",
+  "new_native_trials": 0,
+  "final_evidence_checks": 14,
+  "checkpoint_index_sha256": "6babb7188d81010706d18f126f7b5f0ffc06aed2126c821bb62f3ba6f52b6e65",
+  "scope": "Software-only source contract or explicit reuse of saved native histories;no new robot/hardware runs.",
+  "outcomes": {
+    "fifo_header_source_contract_prepared": true,
+    "manufactured_vendor_memory_cases": 268,
+    "vendor_io_calls": 0,
+    "new_robot_trials": 0,
+    "new_hardware_driver_executions": 0,
+    "conversion_freshness_admitted": false,
+    "hardware_driver_executed": false,
+    "acquisition_timestamp_mapping_admitted": false,
+    "raw_imu_feedback_admitted": false,
+    "full_m2_admitted": false
+  }
+}

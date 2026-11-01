@@ -1,0 +1,25 @@
+{
+  "study": "fifo_burst_epoch_v1",
+  "new_native_trials": 0,
+  "final_evidence_checks": 19,
+  "checkpoint_index_sha256": "c000328cf5bed3429e0f29cfcd3bd3abd58fe2b7ecddb07751d4ffe710854397",
+  "scope": "Software-only source contract or explicit reuse of saved native histories;no new robot/hardware runs.",
+  "outcomes": {
+    "fifo_burst_epoch_source_contract_prepared": true,
+    "explicit_existing_manufactured_byte_cases": 268,
+    "selected_frame_fields_reconciled_with_saved_vendor": 266,
+    "old_bare_overread_intentionally_rejected": 2,
+    "grammar_compatible_corpus_cases": 40,
+    "grammar_rejected_corpus_cases": 228,
+    "new_manufactured_owner_traces": 6,
+    "new_native_robot_trials": 0,
+    "new_hardware_driver_executions": 0,
+    "conversion_freshness_admitted": false,
+    "hardware_configuration_qualified": false,
+    "hardware_driver_executed": false,
+    "host_device_clock_mapping_qualified": false,
+    "acquisition_timestamp_mapping_admitted": false,
+    "raw_imu_feedback_admitted": false,
+    "full_m2_admitted": false
+  }
+}

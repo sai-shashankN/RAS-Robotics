@@ -1,0 +1,31 @@
+import csv,math,os,shutil,subprocess,time,traceback
+from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor
+from context import ROOT,SOURCE,STUDY,read,write,sha
+def rows(p):
+    with p.open() as f:return [{k:float(v) for k,v in r.items()} for r in csv.DictReader(f)]
+def assess(e,out):
+    report=read(out/'report.json');seed=read(out/'sources/seed.json');d=rows(out/'telemetry.csv');native=rows(out/'native-motion.csv');contacts=rows(out/'native-contacts.csv');init=rows(out/'native-init.csv')[0];initial=report['initial'];cfg=read(out/'sources/normalization.json');start=native[0];pos=math.dist(seed['position'],initial['position']);vel=max(abs(a-b) for a,b in zip(seed['velocity'],initial['velocity']));rot=max(abs(a-b) for a,b in zip(seed['rotation'],initial['rotation']));native_initial=max(*[abs(start['p'+k]-seed['position'][i]) for i,k in enumerate('xyz')],*[abs(start['v'+k]-seed['velocity'][i]) for i,k in enumerate('xyz')],*[abs(start['w'+k]-seed['velocity'][3+i]) for i,k in enumerate('xyz')]);indexed={round(v['time_s']/.008):v for v in native if abs(v['time_s']/.008-round(v['time_s']/.008))<1e-7};frame=max(max(abs(v['p'+str(i)]-indexed[round(v['time_s']/.008)]['p'+k]) for i,k in enumerate('xyz')) for v in d)
+    checks=dict(initial_position=pos<1e-12,initial_velocity=vel<1e-12,initial_rotation=rot<1e-7,native_initial_state=native_initial<1e-12,native_mass_inertia=abs(init['mass_kg']-.002)<1e-12 and all(abs(init[k]-1.3333333333333334e-7)<1e-16 for k in ['i00','i11','i22']),global_normalization=abs(init['world_erp']-cfg['world_erp'])<1e-13 and abs(init['world_cfm']-cfg['world_cfm'])<1e-13,free_cube=report['cube_free'],full_5s=abs(report['final']['time_s']-5)<1e-8 and len(d)==625,all_native_steps=len(contacts)==625 and all(v['native_steps']==round(8/e['physics_ms']) and abs(v['window_end_s']-(i+1)*.008)<1e-8 for i,v in enumerate(contacts)),native_valid=init['valid']==1 and all(v['valid']==1 for v in native+contacts),finite=all(math.isfinite(x) for v in d+native+contacts for x in v.values()),actual_floor_contact=sum(v['floor_points'] for v in contacts)>0,top_contact_normals=min(v['min_cube_normal_z'] for v in contacts)>=.95,depth1mm=max(v['max_depth_m'] for v in contacts)<=.001,independent_native_pose=frame<1e-9,stderr_empty=(out/'webots-stderr.log').stat().st_size==0)
+    launch=read(out/'launch-inputs.json');checks['all_launch_sources_bound']=all(sha(out/'sources'/n)==h for n,h in launch['sha256'].items()) and launch['entry']==e and launch['plan_sha256']==sha(STUDY/'test-plan.json');return dict(entry=e,directory=str(out.relative_to(STUDY)),passed=all(checks.values()),checks=checks,initial_errors=dict(position_m=pos,velocity=vel,rotation_matrix=rot,native_state=native_initial),first_floor_s=next(v['window_end_s'] for v in contacts if v['floor_points']>0),maximum_depth_m=max(v['max_depth_m'] for v in contacts),maximum_energy_J=max(v['kinetic_J']+v['potential_J'] for v in native),initial_energy_J=start['kinetic_J']+start['potential_J'],input_sha256={n:sha(out/n) for n in ['telemetry.csv','native-motion.csv','native-contacts.csv','native-init.csv','report.json','launch-inputs.json']})
+def one(e):
+    p=ROOT/e['project'];out=p/'results/impact';out.mkdir(exist_ok=False);world=p/'worlds'/f'impact_{e["physics_ms"]}.wbt';hashes={}
+    for f in p.rglob('*'):
+        rel=f.relative_to(p)
+        if f.is_file() and 'results' not in rel.parts and '__pycache__' not in rel.parts:dest=out/'sources'/rel;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(f,dest);hashes[str(rel)]=sha(dest)
+    write(out/'launch-inputs.json',dict(entry=e,plan_sha256=sha(STUDY/'test-plan.json'),sha256=hashes));install=ROOT/'.local-tools/webots';binary=install/'msys64/mingw64/bin';system=Path(os.environ['SystemRoot']);env=dict(os.environ,WEBOTS_HOME=str(install),ROBOT_AUDIT_DIR=str(out),ROBOT_PHYSICS_MS=str(e['physics_ms']));env['PATH']=';'.join(map(str,[binary,install/'msys64/usr/bin',system/'System32',system,Path('C:/Python313')]))
+    startup=subprocess.STARTUPINFO();startup.dwFlags|=subprocess.STARTF_USESHOWWINDOW;startup.wShowWindow=subprocess.SW_HIDE;start=time.perf_counter()
+    try:
+        with (out/'webots-stdout.log').open('w') as stdout,(out/'webots-stderr.log').open('w') as stderr:r=subprocess.run([str(binary/'webots.exe'),'--batch','--mode=fast','--no-rendering','--stdout','--stderr',str(world)],cwd=p,env=env,startupinfo=startup,creationflags=subprocess.CREATE_NO_WINDOW,stdout=stdout,stderr=stderr,timeout=90)
+        write(out/'process.json',dict(returncode=r.returncode,wall_seconds=time.perf_counter()-start));assert r.returncode==0 and (out/'report.json').exists();result=assess(e,out);write(out/'audit.json',result)
+    except Exception:result=dict(entry=e,directory=str(out.relative_to(STUDY)),passed=False,checks=dict(infrastructure_or_observation=False),error=traceback.format_exc());write(out/'infrastructure-error.json',result)
+    print(dict(id=e['id'],passed=result['passed'],failed=[k for k,v in result['checks'].items() if not v]),flush=True);return result
+def main():
+    assert not (STUDY/'checkpoint-index.json').exists() and not list(STUDY.glob('*_status.json'));build=read(SOURCE/'build/build.json');assert build['returncode']==0 and build['source_sha256']==sha(SOURCE/'impact_probe.c');entries=read(STUDY/'manifest.json')['entries'];assert len(entries)==8;results=[]
+    for e in entries:
+        p=ROOT/e['project'];assert sha(p/'plugins/physics/impact_probe/impact_probe.c')==build['source_sha256'];assert sha(p/'plugins/physics/impact_probe/impact_probe.dll')==build['dll_sha256'];assert sha(p/'controllers/observe_controller/observe_controller.py')==sha(SOURCE/'observe_controller.py')
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        for i in range(0,len(entries),2):
+            pair=list(pool.map(one,entries[i:i+2]));results+=pair;write(STUDY/f'{i//2:02d}_status.json',dict(complete=True,results=pair));write(STUDY/'summary.json',dict(simulator_runs=len(results),results=results,all_isolated_observations_valid=len(results)==8 and all(v['passed'] for v in results),full_m2_admitted=False))
+            if not all(v['passed'] for v in pair):write(STUDY/'matrix-stop.json',dict(pair=i//2,reason='Initial-state/infrastructure/native-observation failure;later diagnostic cases unrun.'));break
+if __name__=='__main__':main()

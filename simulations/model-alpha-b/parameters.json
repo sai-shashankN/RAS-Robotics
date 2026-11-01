@@ -1,0 +1,162 @@
+{
+  "model": "Alpha-B",
+  "units": "metres, kilograms, seconds, radians, newton-metres",
+  "status": "provisional geometry and control experiment; not hardware specifications",
+  "wheel_radius": 0.07,
+  "wheel_width": 0.025,
+  "wheel_track": 0.27,
+  "wheel_mass": 0.1,
+  "wheel_torque_limit": 0.45,
+  "wheel_speed_limit": 14.0,
+  "body_radius": 0.04,
+  "body_length": 0.245,
+  "body_mass": 0.65,
+  "body_com_z": -0.012,
+  "sleeve_inner_radius": 0.043,
+  "sleeve_outer_radius": 0.053,
+  "sleeve_width": 0.055,
+  "sleeve_upper_mass": 0.18,
+  "upper_length": 0.09,
+  "forearm_length": 0.09,
+  "forearm_mass": 0.1,
+  "palm_radius": 0.021,
+  "palm_mass": 0.045,
+  "finger_proximal_length": 0.028,
+  "finger_distal_length": 0.024,
+  "finger_segment_mass": 0.008,
+  "joint_torque_limits": {
+    "elbow": 0.65,
+    "wrist": 0.3,
+    "finger": 0.06,
+    "shoulder": 1.0
+  },
+  "joint_ranges": {
+    "elbow": [
+      -2.55,
+      2.55
+    ],
+    "wrist": [
+      -2.5,
+      2.5
+    ],
+    "shoulder": [
+      -0.8,
+      1.35
+    ]
+  },
+  "poses": {
+    "folded": {
+      "elbow": 2.2,
+      "wrist": 1.1,
+      "finger": 0.0,
+      "distal": 0.25,
+      "shoulder": -0.6
+    },
+    "reach_forward": {
+      "elbow": 0.5,
+      "wrist": 1.74,
+      "finger": -0.45,
+      "distal": 0.1,
+      "shoulder": 0.9
+    },
+    "reach_lower": {
+      "shoulder": 1.1,
+      "elbow": 0.7,
+      "wrist": 1.34,
+      "finger": -0.45,
+      "distal": 0.1
+    },
+    "open_above": {
+      "elbow": 1.5,
+      "wrist": 1.89,
+      "finger": -0.45,
+      "distal": 0.1,
+      "shoulder": -0.25
+    }
+  },
+  "balance_gains": {
+    "pitch": 0.36,
+    "pitch_rate": 0.06,
+    "position": 0.08,
+    "velocity": 0.12,
+    "yaw_rate": 0.35
+  },
+  "notes": [
+    "Alpha: fixed front shoulder mount; no sleeve, extra swivel, or arm-assisted mobility.",
+    "All dimensions and actuator limits are assumptions. No hardware selected.",
+    "Finger commands synchronized; physical coupling undecided.",
+    "Provisional design revision: 650 g lumped inner body with rearward COM to balance the folded front arm. This is an assumed battery/electronics mass distribution, not a measured or selected hardware pack.",
+    "Wheel control uses bounded total-torque state feedback. Gains are provisional simulation values; wheel motor electrical dynamics are not modeled.",
+    "Dynamic empty-arm validation: slow synchronized joint-space paths (0.08 rad/s maximum main-joint target rate) and a 0.30 rad quasi-static lean guard. Geometry-only forward/lower poses exceed this guard. arm_reach is a compact raised reach, not full forward extension.",
+    "Alpha self-collision enabled after the initial empty-arm milestone. Added a 15 mm wrist-to-palm standoff and reduced empty-claw closure to avoid forearm/finger and fingertip overlap. Lumped palm mass includes the standoff; real component masses remain unknown.",
+    "24 October user revision: two opposing curling fingers replace three radial fingers. Earlier three-finger grasp results are archived and do not transfer. Claw roll starts in Beta and remains in X.",
+    "Two-finger balance revision: body COM moved from -31.665 to -28.887 mm in the provisional layout to center the folded configuration. Body mass, joint/wheel caps and gains unchanged; total modeled mass falls by 16 g to 1.207 kg. Needs real component layout."
+  ],
+  "has_sleeve": false,
+  "arm_base_joint": "shoulder",
+  "arm_mount_offset": [
+    0.052,
+    0,
+    0.015
+  ],
+  "body_com_x": -0.02888655890719655,
+  "validation_duration_s": 30,
+  "wheel_control": "torque",
+  "dynamic_arm_rate_rad_s": 0.08,
+  "dynamic_arm_targets": {
+    "arm_shoulder": {
+      "elbow": 2.2,
+      "wrist": 1.1,
+      "finger": 0.0,
+      "distal": 0.25,
+      "shoulder": -0.5
+    },
+    "arm_elbow": {
+      "elbow": 2.05,
+      "wrist": 1.1,
+      "finger": 0.0,
+      "distal": 0.25,
+      "shoulder": -0.6
+    },
+    "arm_wrist": {
+      "elbow": 2.2,
+      "wrist": 0.8,
+      "finger": 0.0,
+      "distal": 0.25,
+      "shoulder": -0.6
+    },
+    "arm_reach": {
+      "elbow": 1.5,
+      "wrist": 1.89,
+      "finger": 0.0,
+      "distal": 0.25,
+      "shoulder": -0.25
+    }
+  },
+  "dynamic_arm_validation_duration_s": 48,
+  "dynamic_lean_limit_rad": 0.3,
+  "self_collision": true,
+  "wrist_standoff": 0.015,
+  "finger_targets": {
+    "claw_open": {
+      "finger": -0.45,
+      "distal": 0.1
+    },
+    "claw_closed": {
+      "finger": 0.0,
+      "distal": 0.25
+    }
+  },
+  "finger_target_rate_rad_s": 0.3,
+  "finger_angles_rad": [
+    1.5707963267948966,
+    4.71238898038469
+  ],
+  "gripper_design": "Two opposing jointed curling fingers on palm-local +/-Y; left/right pinch in reference grasp posture",
+  "wrist_roll_plan": {
+    "required": false,
+    "introduced_in": "Beta",
+    "axis": "Claw/palm local Z, along wrist-to-claw approach axis",
+    "implementation": "Deferred to Beta; absent in Alpha"
+  }
+}

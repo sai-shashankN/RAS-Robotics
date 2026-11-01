@@ -1,0 +1,7 @@
+# Completed native mission source reference
+
+These two source/configuration projects come from checkpoint226Alpha-A/Bcoarse nominal missions. Python controllers,worlds,model-property CSVs and Cphysics-plugin sources are included;raw results,compiled DLLs,local Python runtime settings and image captures are excluded. This reference supplies the actual full-mission controller code alongside the higher-level study/audit package.
+
+They are source references rather than a newly validated portable release. To run a new experiment,install WebotsR2025aandNumPy,compile the`robot_cfm_guard`physics plugin for that installation,and create a fresh results directory. The recorded launcher supplied`M1_RUN=raw_full`,`M1_CASE=nominal`,`M1_CAPTURE=0`,`LOAD_TRANSFER_MODE=both`,`ROBOT_PHYSICS_MS=0.25`,`ROBOT_CONTACT_AUDIT=1`,`ROBOT_FIXTURE_COUNT=8`,`ROBOT_FIXTURE_LIVE=1`,and`ROBOT_AUDIT_DIR`pointing to that new results directory. Do not publish tokens or machine-specific runtime configuration when adapting the launcher. A blank public`numpy_path`uses the installed Python environment.
+
+No simulation is launched by opening this README or by the repository unit checks. Original native evidence and fine-step comparison inputs remain in the excluded local archive. Source/configuration reference files retain their byte identities in`SOURCE_SNAPSHOT.json`;the portable runtime-dependencies stub is an explicit export adaptation.

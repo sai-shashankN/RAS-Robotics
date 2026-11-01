@@ -1,0 +1,62 @@
+{
+  "root_z_m": 0.072,
+  "source_palm_xz_m": [
+    0.1151422594090957,
+    0.1705811305695322
+  ],
+  "destination_palm_xz_m": [
+    0.1151422594090957,
+    0.1705811305695322
+  ],
+  "object_size_m": [
+    0.02,
+    0.02,
+    0.02
+  ],
+  "object_mass_kg": 0.002,
+  "object_local_z_m": 0.058,
+  "platform_size_m": [
+    0.04,
+    0.04
+  ],
+  "platform_top_m": 0.10258113056953219,
+  "source_object_xyz_m": [
+    0.1151422594090957,
+    0.0,
+    0.1125811305695322
+  ],
+  "destination_object_xyz_m": [
+    0.1151422594090957,
+    0,
+    0.1125811305695322
+  ],
+  "lift_m": 0.01,
+  "approach_clearance_m": 0.015,
+  "transfer_m": 0.0,
+  "control_period_ms": 8,
+  "physics_period_ms": 0.25,
+  "gates": {
+    "center_error_m": 0.003,
+    "cube_tilt_rad": 0.05235987755982989,
+    "support_speed_m_s": 0.005,
+    "support_gap_m": 0.0003,
+    "pre_open_s": 0.6,
+    "clear_stable_s": 3.0,
+    "hold_s": 6.0
+  },
+  "assumptions": [
+    "Physical floating root balances on two driven wheels; no external support.",
+    "Ideal object/contact/pose observations and known2g cube; hardware sensors unqualified.",
+    "Four independent finger motors and extended distal travel remain hardware assumptions.",
+    "Stand center and hand target remain fixed; source_object is the perturbed initial cube reference."
+  ],
+  "fixture_locations": [
+    "source"
+  ],
+  "allow_contact_transition": true,
+  "empty_arm": false,
+  "platform_center_xy_m": [
+    0.1151422594090957,
+    0
+  ]
+}

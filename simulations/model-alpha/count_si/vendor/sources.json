@@ -1,0 +1,38 @@
+{
+  "files": [
+    {
+      "name": "bmi2_defs.h",
+      "git_blob_sha": "0bc3f913033bb65632a3de83b96c778c422a847e",
+      "sha256": "39c2cf19bfbf735cb0ed209efd975a731be50dff71b432b24a6a2625b2b14304",
+      "source_url": "https://github.com/boschsensortec/BMI270_SensorAPI/blob/master/bmi2_defs.h",
+      "prior_saved_path": "simulations\\model-alpha\\bmi_fifo\\vendor\\bmi2_defs.h"
+    },
+    {
+      "name": "LICENSE",
+      "git_blob_sha": "3fe3a6b8ca8d68fc96118c7ac702c780249eadf5",
+      "sha256": "56df116398e0b72a12ae353d93002d29175583590283ced2c2510e3d8075546f",
+      "source_url": "https://github.com/boschsensortec/BMI270_SensorAPI/blob/master/LICENSE",
+      "prior_saved_path": "simulations\\model-alpha\\bmi_fifo\\vendor\\LICENSE"
+    },
+    {
+      "name": "accel_gyro_hw_int.c",
+      "git_blob_sha": "32506bda9f20cca81ffe2e48b5ea5b2b1ddae7b0",
+      "sha256": "6f8dbd4d987db9de76f1b9091fea0930d38049dcb92e87d8ed5a6e7dc3a2a1e0",
+      "source_url": "https://github.com/boschsensortec/BMI270_SensorAPI/blob/master/bmi270_examples/accel_gyro_hw_int/accel_gyro_hw_int.c",
+      "prior_saved_path": "project-notes\\research\\bmi270-async-timing-2026-10-29\\vendor\\accel_gyro_hw_int.c"
+    }
+  ],
+  "hardware_driver_executed": false,
+  "primary_review_date": "2026-10-30",
+  "datasheet": {
+    "url": "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmi270-ds000.pdf",
+    "revision": "1.6",
+    "release": "March2026",
+    "printed_pages": [
+      103,
+      104
+    ],
+    "scope": "Filtered FIFO gyro uses gyr_range;prefiltered/OIS use independent ois_range. FIFO_DOWNS selects each input path."
+  },
+  "convention": "Manufacturer example range/32768 with9.80665standard gravity;binary64 model,no calibrated sensitivity or factory compensation."
+}

@@ -1,0 +1,136 @@
+{
+  "state_order": [
+    "position_error_m",
+    "velocity_error_m_s",
+    "pitch_error_rad",
+    "pitch_rate_error_rad_s"
+  ],
+  "total_torque_law": "u = -K state; split equally, retain common/turn caps and speed suppression",
+  "body_mass_kg": 1.0070000000000001,
+  "body_com_m": [
+    -1.938859257410026e-15,
+    0.0,
+    0.01987061198439915
+  ],
+  "body_pitch_inertia_kg_m2": 0.004729546382885674,
+  "equilibrium_com_length_m": 0.01987061198439915,
+  "A": [
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -0.6233828247567939,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.0,
+      40.71830645751703,
+      0.0
+    ]
+  ],
+  "B": [
+    [
+      0.0
+    ],
+    [
+      14.800461447336517
+    ],
+    [
+      0.0
+    ],
+    [
+      -252.80175321568325
+    ]
+  ],
+  "Q_diagonal": [
+    400,
+    400,
+    100,
+    1
+  ],
+  "R": 16.0,
+  "K": [
+    -3.258668955710228,
+    -4.790130482769888,
+    -3.4907516438345394,
+    -0.5778592450072704
+  ],
+  "closed_loop_poles_real": [
+    -97.3368305306195,
+    -8.35039617982036,
+    -2.603902591380832,
+    -1.0514220196238944
+  ],
+  "limitations": [
+    "Rigid planar model; provisional masses and approximate component pitch inertias, not system identification.",
+    "Wheel contacts, friction, electrical/thermal dynamics, flex and backlash not captured.",
+    "Fixed gains derived at each case initial pose; small arm motions still require empirical revalidation."
+  ],
+  "control_period_s": 0.008,
+  "Ad": [
+    [
+      1.0,
+      0.008,
+      -1.99525828163961e-05,
+      -5.3202266085894065e-08
+    ],
+    [
+      0.0,
+      1.0,
+      -0.004989228904229069,
+      -1.99525828163961e-05
+    ],
+    [
+      0.0,
+      0.0,
+      1.0013032687932226,
+      0.008003475081585
+    ],
+    [
+      0.0,
+      0.0,
+      0.3258879510970792,
+      1.0013032687932228
+    ]
+  ],
+  "Bd": [
+    [
+      0.00047364166439878367
+    ],
+    [
+      0.1184171412048337
+    ],
+    [
+      -0.008091413040027098
+    ],
+    [
+      -2.0232925324427224
+    ]
+  ],
+  "riccati_iterations": 1625,
+  "discrete_pole_magnitudes": [
+    0.4675802330435227,
+    0.9353710827505086,
+    0.9793849932802496,
+    0.9916238190711918
+  ],
+  "continuous_gain_sampled_pole_magnitudes": [
+    0.18091805670989525,
+    0.935492429254437,
+    0.9794031296462048,
+    0.9916227578752991
+  ],
+  "design_change": "Exact zero-order-hold discretization and discrete Riccati design at 8 ms; same mass/inertia assumptions and Q/R, no gate changes."
+}

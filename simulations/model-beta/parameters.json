@@ -1,0 +1,109 @@
+{
+  "model": "Beta",
+  "units": "metres, kilograms, seconds, radians, newton-metres",
+  "status": "provisional geometry and control experiment; not hardware specifications",
+  "wheel_radius": 0.07,
+  "wheel_width": 0.025,
+  "wheel_track": 0.27,
+  "wheel_mass": 0.1,
+  "wheel_torque_limit": 0.45,
+  "wheel_speed_limit": 14.0,
+  "body_radius": 0.04,
+  "body_length": 0.245,
+  "body_mass": 0.45,
+  "body_com_z": -0.012,
+  "sleeve_inner_radius": 0.043,
+  "sleeve_outer_radius": 0.053,
+  "sleeve_width": 0.055,
+  "sleeve_upper_mass": 0.18,
+  "upper_length": 0.09,
+  "forearm_length": 0.09,
+  "forearm_mass": 0.1,
+  "palm_radius": 0.021,
+  "palm_mass": 0.045,
+  "finger_proximal_length": 0.028,
+  "finger_distal_length": 0.024,
+  "finger_segment_mass": 0.008,
+  "joint_torque_limits": {
+    "sleeve": 1.0,
+    "elbow": 0.65,
+    "wrist": 0.3,
+    "finger": 0.06
+  },
+  "joint_ranges": {
+    "sleeve": [
+      -1.35,
+      1.35
+    ],
+    "elbow": [
+      -2.55,
+      2.55
+    ],
+    "wrist": [
+      -2.5,
+      2.5
+    ]
+  },
+  "poses": {
+    "folded": {
+      "sleeve": -0.6,
+      "elbow": 2.2,
+      "wrist": 1.54,
+      "finger": 0.15,
+      "distal": 0.5
+    },
+    "reach_forward": {
+      "sleeve": 0.9,
+      "elbow": 0.5,
+      "wrist": 1.74,
+      "finger": -0.45,
+      "distal": 0.1
+    },
+    "reach_back": {
+      "sleeve": -0.9,
+      "elbow": -0.5,
+      "wrist": -1.74,
+      "finger": -0.45,
+      "distal": 0.1
+    },
+    "open_above": {
+      "sleeve": -0.25,
+      "elbow": 1.5,
+      "wrist": 1.89,
+      "finger": -0.45,
+      "distal": 0.1
+    }
+  },
+  "balance_gains": {
+    "pitch": 22.0,
+    "pitch_rate": 2.2,
+    "position": 0.9,
+    "velocity": 1.2
+  },
+  "notes": [
+    "Beta adds the rotating sleeve to Alpha; no extra arm-base swivel or arm-assisted mobility.",
+    "Finger proximal/distal hinges receive synchronized commands; physical actuation coupling is undecided.",
+    "Bounded sleeve travel is an initial Alpha setting, not a limit imposed on future Model X.",
+    "No actuator has been selected; torque and speed limits are explicit assumptions.",
+    "The ring visual is hollow. Its collision proxy is a solid cylinder and ignores the directly connected parent, so bearing fit is not validated.",
+    "24 October user revision: two opposing curling fingers replace three radial fingers. Earlier three-finger grasp results are archived and do not transfer. Claw roll starts in Beta and remains in X."
+  ],
+  "has_sleeve": true,
+  "arm_base_joint": "sleeve",
+  "arm_mount_offset": [
+    0,
+    0,
+    0
+  ],
+  "finger_angles_rad": [
+    0,
+    3.141592653589793
+  ],
+  "gripper_design": "Two opposing jointed curling fingers, on palm-local +/-X; front/back pinch in reference grasp posture",
+  "wrist_roll_plan": {
+    "required": true,
+    "introduced_in": "Beta",
+    "axis": "Claw/palm local Z, along wrist-to-claw approach axis",
+    "implementation": "Deferred to Beta; absent in Alpha"
+  }
+}

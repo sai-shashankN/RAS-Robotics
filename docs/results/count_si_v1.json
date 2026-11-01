@@ -1,0 +1,22 @@
+{
+  "study": "count_si_v1",
+  "new_native_trials": 0,
+  "final_evidence_checks": 16,
+  "checkpoint_index_sha256": "8d196aaff302207ad8522246f945a76b721536256084e010d756d50e25e824da",
+  "scope": "Software-only source contract or explicit reuse of saved native histories;no new robot/hardware runs.",
+  "outcomes": {
+    "counts_to_SI_source_contract_prepared": true,
+    "exhaustive_signed_code_cases": 589824,
+    "random_bound_cases": 9000,
+    "manufactured_pair_examples": 3,
+    "new_native_robot_trials": 0,
+    "new_hardware_driver_executions": 0,
+    "calibrated_SI_accuracy_qualified": false,
+    "hardware_configuration_qualified": false,
+    "conversion_freshness_admitted": false,
+    "host_device_clock_mapping_qualified": false,
+    "acquisition_timestamp_mapping_admitted": false,
+    "raw_imu_feedback_admitted": false,
+    "full_m2_admitted": false
+  }
+}

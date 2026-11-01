@@ -1,0 +1,37 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+secrets*.json
+
+# Runtime, generated evidence and private working material
+.local-tools/
+__pycache__/
+*.py[cod]
+*.dll
+*.exe
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+**/build/
+**/results/
+**/experiments/
+**/archive/
+*.log
+*.jsonl
+*.csv.gz
+**/worlds/.*.wbproj
+project-notes/
+ChatGPT-*.md
+codex-clipboard-*
+
+# Selected small public outcome summaries are intentional.
+!docs/results/
+!docs/results/**

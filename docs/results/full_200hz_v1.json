@@ -1,0 +1,25 @@
+{
+  "study": "full_200hz_v1",
+  "new_native_trials": 4,
+  "final_evidence_checks": 9,
+  "checkpoint_index_sha256": "0ab4848b320f062b5bf6048f779cfca5572a806f76ea0c31b4ff3d52a4eabab7",
+  "scope": "Four complete nominal prepared20mm/2g Alpha-A/B200Hzpassive-observation tasks;no hardware/feedback.",
+  "cases": [
+    {
+      "id": "a_center_0p25",
+      "passed": true
+    },
+    {
+      "id": "b_center_0p25",
+      "passed": true
+    },
+    {
+      "id": "a_center_0p125",
+      "passed": true
+    },
+    {
+      "id": "b_center_0p125",
+      "passed": true
+    }
+  ]
+}

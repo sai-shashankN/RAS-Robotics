@@ -1,0 +1,21 @@
+{
+  "baseline_parameters": "simulations\\model-alpha\\parameters.json",
+  "baseline_sha256": "bc7ea487b60bff96eba3291eccead9ec3c9dbe3d609dd132074a225978582be3",
+  "variant_parameters": "simulations\\model-alpha-b\\parameters.json",
+  "variant_sha256": "f84433038e461dec2002ec1e2429a137695520297ab1a0aae69ee2eeaf45824d",
+  "different_keys": [
+    "finger_angles_rad",
+    "gripper_design",
+    "model"
+  ],
+  "only_physical_input_changed": "finger_angles_rad",
+  "finger_angles_A_rad": [
+    0,
+    3.141592653589793
+  ],
+  "finger_angles_B_rad": [
+    1.5707963267948966,
+    4.71238898038469
+  ],
+  "notes": "Same circular palm, body/link geometry, mass/COM, motor caps, gains and joint targets. No powered roll."
+}
